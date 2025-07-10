@@ -3,7 +3,7 @@ Route119_WeatherInstitute_1F_MapScripts::
 	.byte 0
 
 Route119_WeatherInstitute_1F_OnTransition:
-	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 0, Route119_WeatherInstitute_1F_EventScript_SetLittleBoyPos
+	call_if_lt VAR_WEATHER_INSTITUTE_STATE, 2, Route119_WeatherInstitute_1F_EventScript_SetLittleBoyPos
 	end
 
 Route119_WeatherInstitute_1F_EventScript_SetLittleBoyPos::
@@ -15,7 +15,7 @@ Route119_WeatherInstitute_1F_EventScript_LittleBoy::
 	lock
 	faceplayer
 	special GetPlayerBigGuyGirlString
-	goto_if_eq VAR_WEATHER_INSTITUTE_STATE, 0, Route119_WeatherInstitute_1F_EventScript_LittleBoyTeamAquaHere
+	goto_if_lt VAR_WEATHER_INSTITUTE_STATE, 2, Route119_WeatherInstitute_1F_EventScript_LittleBoyTeamAquaHere
 	msgbox Route119_WeatherInstitute_1F_Text_WowYoureStrong, MSGBOX_DEFAULT
 	release
 	end
@@ -84,15 +84,12 @@ Route119_WeatherInstitute_1F_Text_Grunt1PostBattle:
 	.string "about what he's thinking?$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4Intro:
-	.string "Huh?\n"
-	.string "What's a kid doing here?$"
+	.string "The weather here is so strange!$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4Defeat:
-	.string "Huh?\n"
-	.string "I lost?!$"
+	.string "Huh? I lost?!$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4PostBattle:
-	.string "Oh, no…\n"
 	.string "I'll catch an earful for losing to a kid…\p"
 	.string "I should just take a nap in the bed…$"
 

@@ -147,14 +147,6 @@ LilycoveCity_ContestLobby_EventScript_CantEnterLowRank::
 	release
 	end
 
-@ Unused
-LilycoveCity_ContestLobby_EventScript_ConfirmEntry::
-	msgbox LilycoveCity_ContestLobby_Text_ConfirmContestMon, MSGBOX_YESNO
-	switch VAR_RESULT
-	case NO, LilycoveCity_ContestLobby_EventScript_ChooseContestMon
-	case YES, LilycoveCity_ContestLobby_EventScript_EnterMon
-	end
-
 LilycoveCity_ContestLobby_EventScript_ConfirmEntryAlreadyWon::
 	msgbox LilycoveCity_ContestLobby_Text_AlreadyWonEnterAnyway, MSGBOX_YESNO
 	switch VAR_RESULT

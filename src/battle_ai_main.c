@@ -166,11 +166,11 @@ static u64 GetWildAiFlags(void)
         avgLevel = (GetMonData(&gEnemyParty[0], MON_DATA_LEVEL) + GetMonData(&gEnemyParty[1], MON_DATA_LEVEL)) / 2;
 
     flags |= AI_FLAG_CHECK_BAD_MOVE;
-    if (avgLevel >= 20)
+    if (avgLevel >= 5)
         flags |= AI_FLAG_CHECK_VIABILITY;
-    if (avgLevel >= 60)
+    if (avgLevel >=  25)
         flags |= AI_FLAG_TRY_TO_2HKO;
-    if (avgLevel >= 80)
+    if (avgLevel >= 50)
         flags |= AI_FLAG_HP_AWARE;
 
     if (B_VAR_WILD_AI_FLAGS != 0 && VarGet(B_VAR_WILD_AI_FLAGS) != 0)
@@ -2138,7 +2138,6 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             break;
         case EFFECT_METRONOME:
             break;
-
         case EFFECT_CONVERSION_2:
             //TODO
             break;
@@ -2584,24 +2583,6 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             {
                 ADJUST_SCORE(-10);
             }
-            else
-            {
-                /* TODO Fling
-                u8 effect = gFlingTable[gBattleMons[battlerAtk].item].effect;
-                switch (effect)
-                {
-                case MOVE_EFFECT_BURN:
-                    break;
-                case MOVE_EFFECT_PARALYSIS:
-                    break;
-                case MOVE_EFFECT_POISON:
-                    break;
-                case MOVE_EFFECT_TOXIC:
-                    break;
-                case MOVE_EFFECT_FREEZE:
-                    break;
-                }*/
-            }
             break;
         case EFFECT_EMBARGO:
             if (!IsBattlerItemEnabled(battlerAtk)
@@ -2723,7 +2704,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                                                              | MOVE_TARGET_FOES_AND_ALLY
                                                              | MOVE_TARGET_OPPONENTS_FIELD)
                       && instructedMove != MOVE_MIND_BLOWN && instructedMove != MOVE_STEEL_BEAM)
-                        ADJUST_SCORE(-10); //Don't force the enemy to attack you again unless it can kill itself with Mind Blown
+                        ADJUST_SCORE(-10); //Don't force the enemy to attack you again unless it can kill itself
                     else if (instructedMove != MOVE_MIND_BLOWN)
                         ADJUST_SCORE(-5); //Do something better
                 }
@@ -2738,8 +2719,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
         case EFFECT_AFTER_YOU:
             if (!IS_TARGETING_PARTNER(battlerAtk, battlerDef)
               || !isDoubleBattle
-              || AI_IsSlower(battlerAtk, battlerDef, move)
-              || PartnerMoveIsSameAsAttacker(BATTLE_PARTNER(battlerAtk), battlerDef, move, aiData->partnerMove))
+              || AI_IsSlower(battlerAtk, battlerDef, move))
                 ADJUST_SCORE(-10);
             break;
         case EFFECT_SUCKER_PUNCH:
@@ -3157,6 +3137,7 @@ static s32 AI_DoubleBattle(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             // Triggering your ally's hold item should only be done deliberately with a spread move.
             switch (atkPartnerHoldEffect)
             {
+            case HOLD_EFFECT_DIRE_POLICY:
             case HOLD_EFFECT_WEAKNESS_POLICY:
                 if (aiData->effectiveness[battlerAtk][battlerAtkPartner][gAiThinkingStruct->movesetIndex] >= UQ_4_12(2.0) && isFriendlyFireOK)
                 {
@@ -3534,9 +3515,10 @@ static s32 AI_DoubleBattle(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             case EFFECT_SOAK:
                 if (atkPartnerAbility == ABILITY_WONDER_GUARD
                  && !IS_BATTLER_OF_TYPE(battlerAtkPartner, TYPE_WATER)
-                 && GetActiveGimmick(battlerAtkPartner) != GIMMICK_TERA)
+                 && GetActiveGimmick(battlerAtkPartner) != GIMMICK_TERA
+                 && IS_TARGETING_PARTNER(battlerAtk, battlerAtkPartner))
                 {
-                    RETURN_SCORE_PLUS(WEAK_EFFECT);
+                    RETURN_SCORE_PLUS(GOOD_EFFECT);
                 }
                 break;
             case EFFECT_INSTRUCT:
@@ -3640,6 +3622,7 @@ static inline bool32 ShouldUseSpreadDamageMove(u32 battlerAtk, u32 move, u32 mov
     u32 partnerBattler = BATTLE_PARTNER(battlerAtk);
     u32 noOfHitsToFaintPartner = GetNoOfHitsToKOBattler(battlerAtk, partnerBattler, moveIndex, AI_ATTACKING);
     u32 friendlyFireThreshold = GetFriendlyFireKOThreshold(battlerAtk);
+    
     return (IsDoubleBattle()
          && noOfHitsToFaintPartner != 0 // Immunity check
          && IsBattlerAlive(partnerBattler)
@@ -4397,6 +4380,8 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
                 ADJUST_SCORE(WEAK_EFFECT);
             if (HasMoveWithType(battlerDef, TYPE_FIRE) || HasMoveWithType(BATTLE_PARTNER(battlerDef), TYPE_FIRE))
                 ADJUST_SCORE(WEAK_EFFECT);
+            if (HasMoveWithEffect(battlerDef, EFFECT_WEATHER_BALL))
+                ADJUST_SCORE(GOOD_EFFECT);
         }
         break;
     case EFFECT_SUNNY_DAY:
@@ -4686,6 +4671,8 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
     case EFFECT_SKILL_SWAP:
         if (GetActiveGimmick(battlerDef) == GIMMICK_DYNAMAX)
             break;
+        else if (!IS_TARGETING_PARTNER(battlerAtk, battlerDef) && aiData->abilities[battlerAtk] == ABILITY_INTIMIDATE && aiData->abilities[battlerDef] == ABILITY_INTIMIDATE)
+            ADJUST_SCORE(GOOD_EFFECT);
         else if (gAbilitiesInfo[aiData->abilities[battlerDef]].aiRating > gAbilitiesInfo[aiData->abilities[battlerAtk]].aiRating)
             ADJUST_SCORE(DECENT_EFFECT);
         break;
@@ -4908,27 +4895,6 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
             ADJUST_SCORE(DECENT_EFFECT);
         break;
     case EFFECT_FLING:
-        /* TODO
-        switch (gFlingTable[aiData->items[battlerAtk]].effect)
-        {
-        case MOVE_EFFECT_BURN:
-            IncreaseBurnScore(battlerAtk, battlerDef, move, &score);
-            break;
-        case MOVE_EFFECT_FLINCH:
-            score += ShouldTryToFlinch(battlerAtk, battlerDef, aiData->abilities[battlerAtk], aiData->abilities[battlerDef], move);
-            break;
-        case MOVE_EFFECT_PARALYSIS:
-            IncreaseParalyzeScore(battlerAtk, battlerDef, move, &score);
-            break;
-        case MOVE_EFFECT_POISON:
-        case MOVE_EFFECT_TOXIC:
-            IncreasePoisonScore(battlerAtk, battlerDef, move, &score);
-            break;
-        case MOVE_EFFECT_FREEZE:
-            if (AI_CanFreeze(battlerAtk, battlerDef))
-                ADJUST_SCORE(GOOD_EFFECT);
-            break;
-        }*/
         break;
     case EFFECT_EMBARGO:
         if (aiData->holdEffects[battlerDef] != HOLD_EFFECT_NONE)

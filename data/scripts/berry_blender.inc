@@ -238,8 +238,6 @@ BerryBlender_EventScript_BerryBlender1::
 	lockall
 	goto_if_unset FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER, BerryBlender_EventScript_BlendMasterPresent
 	setvar NUM_OPPONENTS, 1
-	applymovement LOCALID_BLEND_MASTER, BerryBlender_Movement_BlendLeaderWalkInPlace
-	waitmovement 0
 	msgbox BerryBlender_Text_WantToMakePokeblocks, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, BerryBlender_EventScript_TryUseBerryBlender1
 	goto BerryBlender_EventScript_DeclineBlender1
@@ -317,9 +315,6 @@ BerryBlender_EventScript_Blender1NoCase:
 BerryBlender_EventScript_BerryBlender2::
 	lockall
 	setvar NUM_OPPONENTS, 2
-	applymovement LOCALID_CONTEST_LOBBY_BLENDER_2_PARTICIPANT, Common_Movement_FaceOriginalDirection
-	applymovement LOCALID_CONTEST_LOBBY_BLENDER_2_LEADER, BerryBlender_Movement_BlendLeaderWalkInPlace
-	waitmovement 0
 	msgbox BerryBlender_Text_WantToBlendPokeblocksWithUs, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, BerryBlender_EventScript_TryUseBerryBlender2
 	goto BerryBlender_EventScript_DeclineBlender2
@@ -374,10 +369,7 @@ BerryBlender_EventScript_Blender2NoCase:
 
 BerryBlender_EventScript_BerryBlender3::
 	lockall
-	setvar VAR_0x8008, LOCALID_CONTEST_LOBBY_BLENDER_3_LEADER
 	setvar NUM_OPPONENTS, 3
-	applymovement LOCALID_CONTEST_LOBBY_BLENDER_3_PARTICIPANT_1, Common_Movement_FaceOriginalDirection
-	applymovement LOCALID_CONTEST_LOBBY_BLENDER_3_PARTICIPANT_2, Common_Movement_FaceOriginalDirection
 	applymovement VAR_0x8008, BerryBlender_Movement_BlendLeaderWalkInPlace
 	waitmovement 0
 	msgbox BerryBlender_Text_LookGoodAtBlendingJoinUs, MSGBOX_YESNO

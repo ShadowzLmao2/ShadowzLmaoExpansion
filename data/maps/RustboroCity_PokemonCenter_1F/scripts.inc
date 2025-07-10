@@ -4,7 +4,7 @@ RustboroCity_PokemonCenter_1F_MapScripts::
 	.byte 0
 
 RustboroCity_PokemonCenter_1F_OnTransition:
-	setrespawn HEAL_LOCATION_RUSTBORO_CITY
+	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
 	call Common_EventScript_UpdateBrineyLocation
 	end
 
@@ -16,6 +16,13 @@ RustboroCity_PokemonCenter_1F_EventScript_Nurse::
 	release
 	end
 
+RustboroCity_PokemonCenter_1F_EventScript_Util::
+	call Common_EventScript_PkmnCenterUtil
+	waitmessage
+	waitbuttonpress
+	release
+	end
+	
 RustboroCity_PokemonCenter_1F_EventScript_Man::
 	msgbox RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities, MSGBOX_NPC
 	end

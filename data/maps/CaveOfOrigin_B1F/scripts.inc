@@ -47,6 +47,7 @@ CaveOfOrigin_B1F_EventScript_DontRemember::
 	goto CaveOfOrigin_B1F_EventScript_WheresRayquaza
 
 CaveOfOrigin_B1F_EventScript_AtSkyPillar::
+	giveitem ITEM_AGGRONITE
 	msgbox CaveOfOrigin_B1F_Text_WellHeadToSkyPillar, MSGBOX_DEFAULT
 	closemessage
 	playse SE_EXIT

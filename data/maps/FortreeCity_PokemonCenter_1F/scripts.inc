@@ -4,7 +4,7 @@ FortreeCity_PokemonCenter_1F_MapScripts::
 	.byte 0
 
 FortreeCity_PokemonCenter_1F_OnTransition:
-	setrespawn HEAL_LOCATION_FORTREE_CITY
+	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
 	end
 
 FortreeCity_PokemonCenter_1F_EventScript_Nurse::
@@ -15,6 +15,13 @@ FortreeCity_PokemonCenter_1F_EventScript_Nurse::
 	release
 	end
 
+FortreeCity_PokemonCenter_1F_EventScript_Util::
+	call Common_EventScript_PkmnCenterUtil
+	waitmessage
+	waitbuttonpress
+	release
+	end
+	
 FortreeCity_PokemonCenter_1F_EventScript_Gentleman::
 	msgbox FortreeCity_PokemonCenter_1F_Text_GoToSafariZone, MSGBOX_NPC
 	end

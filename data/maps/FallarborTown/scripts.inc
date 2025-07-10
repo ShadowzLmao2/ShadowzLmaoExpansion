@@ -11,7 +11,7 @@ FallarborTown_OnTransition:
 FallarborTown_EventScript_ExpertM::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, FallarborTown_EventScript_ExpertMNormal
+	goto_if_set FLAG_DEFEATED_MT_CHIMNEY, FallarborTown_EventScript_ExpertMNormal
 	msgbox FallarborTown_Text_ShadyCharactersCozmosHome, MSGBOX_DEFAULT
 	release
 	end
@@ -90,6 +90,5 @@ FallarborTown_Text_TownSign:
 	.string "“A farm community with small gardens.”$"
 
 FallarborTown_Text_MoveTutorSign:
-	.string "MOVE TUTOR'S HOUSE\n"
-	.string "“New moves taught to POKéMON.”$"
+	.string "MOVE TUTOR'S HOUSE - CLOSED$"
 

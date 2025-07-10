@@ -1,3 +1,13 @@
+.set LOCALID_RICH_BOY, 1
+.set LOCALID_GENTLEMAN, 2
+.set LOCALID_SCIENTIST, 3
+.set LOCALID_STEVEN, 4
+.set LOCALID_GRUNT_6, 5
+.set LOCALID_GRUNT_5, 6
+.set LOCALID_GRUNT_7, 7
+.set LOCALID_TABITHA, 8
+.set LOCALID_MAXIE, 9
+
 MossdeepCity_SpaceCenter_2F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, MossdeepCity_SpaceCenter_2F_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, MossdeepCity_SpaceCenter_2F_OnFrame
@@ -34,22 +44,6 @@ MossdeepCity_SpaceCenter_2F_EventScript_ThreeMagmaGrunts::
 	waitmovement 0
 	applymovement LOCALID_PLAYER, Common_Movement_Delay48
 	waitmovement 0
-	msgbox MossdeepCity_SpaceCenter_2F_Text_YoureOutnumberedTakeUsOn, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts
-	msgbox MossdeepCity_SpaceCenter_2F_Text_GoodAnswer, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_PLAYER, MossdeepCity_SpaceCenter_2F_Movement_PlayerExit
-	waitmovement 0
-	warp MAP_MOSSDEEP_CITY_SPACE_CENTER_1F, 13, 1
-	waitstate
-	releaseall
-	end
-
-MossdeepCity_SpaceCenter_2F_Movement_PlayerExit:
-	walk_up
-	step_end
-
-MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts::
 	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_5, MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat
 	applymovement LOCALID_SPACE_CENTER_GRUNT_5, MossdeepCity_SpaceCenter_2F_Movement_Grunt5Defeated
@@ -72,6 +66,10 @@ MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts::
 	copyobjectxytoperm LOCALID_SPACE_CENTER_GRUNT_5
 	releaseall
 	end
+
+MossdeepCity_SpaceCenter_2F_Movement_PlayerExit:
+	walk_up
+	step_end
 
 MossdeepCity_SpaceCenter_2F_Movement_Grunt6Defeated:
 	lock_facing_direction
@@ -237,12 +235,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_ReadyForBattlePrompt::
 MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle::
 	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
-	special SavePlayerParty
-	fadescreen FADE_TO_BLACK
-	special ChooseHalfPartyForBattle
-	waitstate
 	goto_if_ne VAR_RESULT, 0, MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle
-	special LoadPlayerParty
 	goto MossdeepCity_SpaceCenter_2F_EventScript_ReadyForBattlePrompt
 
 MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle::
@@ -290,7 +283,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
 	msgbox MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome, MSGBOX_DEFAULT
 	closemessage
 	fadescreen FADE_TO_BLACK
-	setflag FLAG_DEFEATED_MAGMA_SPACE_CENTER
+	setflag FLAG_DEFEATED_SPACE_CENTER
 	setflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_STEVEN
 	removeobject LOCALID_SPACE_CENTER_2F_STEVEN
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_MAGMA_NOTE
@@ -327,7 +320,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_RivalRayquazaCall::
 	call_if_eq VAR_RESULT, MALE, MossdeepCity_SpaceCenter_2F_EventScript_MayRayquazaCall
 	call_if_eq VAR_RESULT, FEMALE, MossdeepCity_SpaceCenter_2F_EventScript_BrendanRayquazaCall
 	closemessage
-	clearflag FLAG_DEFEATED_MAGMA_SPACE_CENTER
+	clearflag FLAG_DEFEATED_SPACE_CENTER
 	releaseall
 	end
 

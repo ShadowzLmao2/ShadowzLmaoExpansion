@@ -46,32 +46,33 @@
 #define EGG_GROUPS_PER_MON            2
 
 // Pokémon natures
-#define NATURE_HARDY    0 // Neutral
-#define NATURE_LONELY   1 // +Atk -Def
-#define NATURE_BRAVE    2 // +Atk -Speed
-#define NATURE_ADAMANT  3 // +Atk -SpAtk
-#define NATURE_NAUGHTY  4 // +Atk -SpDef
-#define NATURE_BOLD     5 // +Def -Atk
-#define NATURE_DOCILE   6 // Neutral
-#define NATURE_RELAXED  7 // +Def -Speed
-#define NATURE_IMPISH   8 // +Def -SpAtk
-#define NATURE_LAX      9 // +Def -SpDef
-#define NATURE_TIMID    10 // +Speed -Atk
-#define NATURE_HASTY    11 // +Speed -Def
-#define NATURE_SERIOUS  12 // Neutral
-#define NATURE_JOLLY    13 // +Speed -SpAtk
-#define NATURE_NAIVE    14 // +Speed - SpDef
-#define NATURE_MODEST   15 // +SpAtk -Atk
-#define NATURE_MILD     16 // +SpAtk -Def
-#define NATURE_QUIET    17 // +SpAtk -Speed
-#define NATURE_BASHFUL  18 // Neutral
-#define NATURE_RASH     19 // +SpAtk -SpDef
-#define NATURE_CALM     20 // +SpDef -Atk
-#define NATURE_GENTLE   21 // +SpDef -Def
-#define NATURE_SASSY    22 // +SpDef -Speed
-#define NATURE_CAREFUL  23 // +SpDef -SpAtk
-#define NATURE_QUIRKY   24 // Neutral
-#define NUM_NATURES     25
+#define NATURE_NONE     0 // Neutral
+#define NATURE_HARDY    1 // +Atk
+#define NATURE_LONELY   2 // +Atk -Def
+#define NATURE_BRAVE    3 // +Atk -Speed
+#define NATURE_ADAMANT  4 // +Atk -SpAtk
+#define NATURE_NAUGHTY  5 // +Atk -SpDef
+#define NATURE_BOLD     6 // +Def -Atk
+#define NATURE_DOCILE   7 // +Def
+#define NATURE_RELAXED  8 // +Def -Speed
+#define NATURE_IMPISH   9 // +Def -SpAtk
+#define NATURE_LAX      10 // +Def -SpDef
+#define NATURE_TIMID    11// +Speed -Atk
+#define NATURE_HASTY    12 // +Speed -Def
+#define NATURE_SERIOUS  13 // +Speed
+#define NATURE_JOLLY    14 // +Speed -SpAtk
+#define NATURE_NAIVE    15 // +Speed - SpDef
+#define NATURE_MODEST   16 // +SpAtk -Atk
+#define NATURE_MILD     17 // +SpAtk -Def
+#define NATURE_QUIET    18 // +SpAtk -Speed
+#define NATURE_BASHFUL  19 // +SpAtk
+#define NATURE_RASH     20 // +SpAtk -SpDef
+#define NATURE_CALM     21 // +SpDef -Atk
+#define NATURE_GENTLE   22 // +SpDef -Def
+#define NATURE_SASSY    23 // +SpDef -Speed
+#define NATURE_CAREFUL  24 // +SpDef -SpAtk
+#define NATURE_QUIRKY   25 // +SpDef
+#define NUM_NATURES     26
 
 // Pokémon Stats
 #define STAT_HP      0

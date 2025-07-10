@@ -3,7 +3,7 @@ AquaHideout_B2F_MapScripts::
 	.byte 0
 
 AquaHideout_B2F_OnTransition:
-	call_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, AquaHideout_B2F_EventScript_PreventMattNoticing
+	call_if_set FLAG_AQUA_HIDEOUT_BEATEN, AquaHideout_B2F_EventScript_PreventMattNoticing
 	end
 
 AquaHideout_B2F_EventScript_PreventMattNoticing::
@@ -46,7 +46,7 @@ AquaHideout_B2F_EventScript_SubmarineEscape::
 	applymovement VAR_0x8008, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox AquaHideout_B2F_Text_MattPostBattle, MSGBOX_DEFAULT
-	setflag FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE
+	setflag FLAG_AQUA_HIDEOUT_BEATEN
 	setflag FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS
 	release
 	end
@@ -76,9 +76,9 @@ AquaHideout_B2F_EventScript_Grunt4Defeated::
 	release
 	end
 
-AquaHideout_B2F_EventScript_Grunt6::
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_6, AquaHideout_B2F_Text_Grunt6Intro, AquaHideout_B2F_Text_Grunt6Defeat
-	msgbox AquaHideout_B2F_Text_Grunt6PostBattle, MSGBOX_AUTOCLOSE
+AquaHideout_B2F_EventScript_Grunt5::
+	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_5, AquaHideout_B1F_Text_Grunt5Intro, AquaHideout_B1F_Text_Grunt5Defeat
+	msgbox AquaHideout_B1F_Text_Grunt5PostBattle, MSGBOX_AUTOCLOSE
 	end
 
 AquaHideout_B2F_EventScript_Grunt8::

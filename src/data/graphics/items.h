@@ -1469,6 +1469,9 @@ const u16 gItemIconPalette_EjectButton[] = INCBIN_U16("graphics/items/icon_palet
 const u32 gItemIcon_WeaknessPolicy[] = INCBIN_U32("graphics/items/icons/weakness_policy.4bpp.lz");
 const u16 gItemIconPalette_WeaknessPolicy[] = INCBIN_U16("graphics/items/icon_palettes/weakness_policy.gbapal");
 
+const u32 gItemIcon_DirePolicy[] = INCBIN_U32("graphics/items/icons/dire_policy.4bpp.lz");
+const u16 gItemIconPalette_DirePolicy[] = INCBIN_U16("graphics/items/icon_palettes/dire_policy.gbapal");
+
 const u32 gItemIcon_AssaultVest[] = INCBIN_U32("graphics/items/icons/assault_vest.4bpp.lz");
 const u16 gItemIconPalette_AssaultVest[] = INCBIN_U16("graphics/items/icon_palettes/assault_vest.gbapal");
 

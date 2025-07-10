@@ -4,13 +4,20 @@ LavaridgeTown_PokemonCenter_1F_MapScripts::
 	.byte 0
 
 LavaridgeTown_PokemonCenter_1F_OnTransition:
-	setrespawn HEAL_LOCATION_LAVARIDGE_TOWN
+	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
 	call Common_EventScript_UpdateBrineyLocation
 	end
 
 LavaridgeTown_PokemonCenter_1F_EventScript_Nurse::
 	setvar VAR_0x800B, LOCALID_LAVARIDGE_NURSE
 	call Common_EventScript_PkmnCenterNurse
+	waitmessage
+	waitbuttonpress
+	release
+	end
+
+LavaridgeTown_PokemonCenter_1F_EventScript_Util::
+	call Common_EventScript_PkmnCenterUtil
 	waitmessage
 	waitbuttonpress
 	release

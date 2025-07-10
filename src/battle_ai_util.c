@@ -401,7 +401,7 @@ bool32 IsTruantMonVulnerable(u32 battlerAI, u32 opposingBattler)
     {
         u32 move = gBattleHistory->usedMoves[opposingBattler][i];
         enum BattleMoveEffects effect = GetMoveEffect(move);
-        if (effect == EFFECT_PROTECT && move != MOVE_ENDURE)
+        if ((effect == EFFECT_PROTECT || move == MOVE_SUBSTITUTE) && move != MOVE_ENDURE)
             return TRUE;
         if (effect == EFFECT_SEMI_INVULNERABLE && AI_IsSlower(battlerAI, opposingBattler, GetAIChosenMove(battlerAI)))
             return TRUE;
@@ -412,9 +412,10 @@ bool32 IsTruantMonVulnerable(u32 battlerAI, u32 opposingBattler)
 // move checks
 bool32 IsAffectedByPowder(u32 battler, u32 ability, enum ItemHoldEffect holdEffect)
 {
-    if (ability == ABILITY_OVERCOAT
+    if ((ability == ABILITY_OVERCOAT
         || (B_POWDER_GRASS >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GRASS))
         || holdEffect == HOLD_EFFECT_SAFETY_GOGGLES)
+        && IsMoldBreakerTypeAbility(battler, ability))
         return FALSE;
     return TRUE;
 }
@@ -1486,9 +1487,7 @@ enum ItemHoldEffect AI_DecideHoldEffectForTurn(u32 battlerId)
     if (gAiThinkingStruct->aiFlags[battlerId] & AI_FLAG_NEGATE_UNAWARE)
         return holdEffect;
 
-    if (gStatuses3[battlerId] & STATUS3_EMBARGO)
-        return HOLD_EFFECT_NONE;
-    if (gFieldStatuses & STATUS_FIELD_MAGIC_ROOM)
+    if (gStatuses3[battlerId] & STATUS3_EMBARGO || gFieldStatuses & STATUS_FIELD_MAGIC_ROOM)
         return HOLD_EFFECT_NONE;
     if (gAiLogicData->abilities[battlerId] == ABILITY_KLUTZ && !(gStatuses3[battlerId] & STATUS3_GASTRO_ACID))
         return HOLD_EFFECT_NONE;
@@ -1695,15 +1694,12 @@ bool32 IsMoveRedirectionPrevented(u32 battlerAtk, u32 move, u32 atkAbility)
 
 bool32 IsSemiInvulnerable(u32 battlerDef, u32 move)
 {
-    if (gStatuses3[battlerDef] & STATUS3_PHANTOM_FORCE)
+    if (gBattleStruct->battlerState[battlerDef].commandingDondozo)
         return TRUE;
-    else if (gBattleStruct->battlerState[battlerDef].commandingDondozo)
-        return TRUE;
-    else if (!MoveDamagesAirborne(move) && gStatuses3[battlerDef] & STATUS3_ON_AIR)
-        return TRUE;
-    else if (!MoveDamagesUnderWater(move) && gStatuses3[battlerDef] & STATUS3_UNDERWATER)
-        return TRUE;
-    else if (!MoveDamagesUnderground(move) && gStatuses3[battlerDef] & STATUS3_UNDERGROUND)
+    else if ((!gMovesInfo[move].damagesAirborne && gStatuses3[battlerDef] & STATUS3_ON_AIR)
+            ||(!gMovesInfo[move].damagesUnderwater && gStatuses3[battlerDef] & STATUS3_UNDERWATER)
+            ||(!gMovesInfo[move].damagesUnderground && gStatuses3[battlerDef] & STATUS3_UNDERGROUND)
+            ||(gStatuses3[battlerDef] & STATUS3_PHANTOM_FORCE))
         return TRUE;
     else
         return FALSE;
@@ -3478,6 +3474,7 @@ bool32 ShouldFakeOut(u32 battlerAtk, u32 battlerDef, u32 move)
 {
     if ((!gDisableStructs[battlerAtk].isFirstTurn && MoveHasAdditionalEffectWithChance(move, MOVE_EFFECT_FLINCH, 100))
     || gAiLogicData->abilities[battlerAtk] == ABILITY_GORILLA_TACTICS
+    || gAiLogicData->abilities[battlerAtk] == ABILITY_REBEL_TACTICS
     || gAiLogicData->holdEffects[battlerAtk] == HOLD_EFFECT_CHOICE_BAND
     || gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_COVERT_CLOAK
     || DoesSubstituteBlockMove(battlerAtk, battlerDef, move)
@@ -4069,13 +4066,13 @@ static const u16 sRecycleEncouragedItems[] =
     ITEM_CHESTO_BERRY,
     ITEM_LUM_BERRY,
     ITEM_STARF_BERRY,
+    ITEM_SALAC_BERRY,
+    ITEM_LIECHI_BERRY,
     ITEM_SITRUS_BERRY,
     ITEM_MICLE_BERRY,
     ITEM_CUSTAP_BERRY,
     ITEM_MENTAL_HERB,
     ITEM_FOCUS_SASH,
-    ITEM_SALAC_BERRY,
-    ITEM_LIECHI_BERRY,
     ITEM_AGUAV_BERRY,
     ITEM_FIGY_BERRY,
     ITEM_IAPAPA_BERRY,
@@ -4085,10 +4082,10 @@ static const u16 sRecycleEncouragedItems[] =
     ITEM_POWER_HERB,
     ITEM_BERRY_JUICE,
     ITEM_WEAKNESS_POLICY,
+    ITEM_DIRE_POLICY,
     ITEM_BLUNDER_POLICY,
     ITEM_KEE_BERRY,
     ITEM_MARANGA_BERRY,
-    // TODO expand this
 };
 
 // Its assumed that the berry is strategically given, so no need to check benefits of the berry

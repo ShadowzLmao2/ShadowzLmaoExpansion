@@ -4,12 +4,19 @@ PacifidlogTown_PokemonCenter_1F_MapScripts::
 	.byte 0
 
 PacifidlogTown_PokemonCenter_1F_OnTransition:
-	setrespawn HEAL_LOCATION_PACIFIDLOG_TOWN
+	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
 	end
 
 PacifidlogTown_PokemonCenter_1F_EventScript_Nurse::
 	setvar VAR_0x800B, LOCALID_PACIFIDLOG_NURSE
 	call Common_EventScript_PkmnCenterNurse
+	waitmessage
+	waitbuttonpress
+	release
+	end
+
+PacifidlogTown_PokemonCenter_1F_EventScript_Util::
+	call Common_EventScript_PkmnCenterUtil
 	waitmessage
 	waitbuttonpress
 	release

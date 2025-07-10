@@ -4,7 +4,7 @@ SootopolisCity_PokemonCenter_1F_MapScripts::
 	.byte 0
 
 SootopolisCity_PokemonCenter_1F_OnTransition:
-	setrespawn HEAL_LOCATION_SOOTOPOLIS_CITY
+	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
 	end
 
 SootopolisCity_PokemonCenter_1F_EventScript_Nurse::
@@ -15,6 +15,13 @@ SootopolisCity_PokemonCenter_1F_EventScript_Nurse::
 	release
 	end
 
+SootopolisCity_PokemonCenter_1F_EventScript_Util::
+	call Common_EventScript_PkmnCenterUtil
+	waitmessage
+	waitbuttonpress
+	release
+	end
+	
 SootopolisCity_PokemonCenter_1F_EventScript_Gentleman::
 	lock
 	faceplayer

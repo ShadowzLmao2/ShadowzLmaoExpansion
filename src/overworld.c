@@ -380,6 +380,9 @@ void DoWhiteOut(void)
     RunScriptImmediately(EventScript_WhiteOut);
     HealPlayerParty();
     Overworld_ResetStateAfterWhiteOut();
+    if (FlagGet(FLAG_HARDCORE_MODE_ENABLED)){
+        CB2_NewGame();
+    }
     SetWarpDestinationToLastHealLocation();
     WarpIntoMap();
 }
@@ -1136,7 +1139,7 @@ static bool16 NoMusicInSotopolisWithLegendaries(struct WarpData *warp)
 
 static bool16 IsInfiltratedWeatherInstitute(struct WarpData *warp)
 {
-    if (VarGet(VAR_WEATHER_INSTITUTE_STATE))
+    if (VarGet(VAR_WEATHER_INSTITUTE_STATE) == 2)
         return FALSE;
     else if (warp->mapGroup != MAP_GROUP(MAP_ROUTE119_WEATHER_INSTITUTE_1F))
         return FALSE;
@@ -1790,7 +1793,7 @@ void CB2_NewGame(void)
     PlayTimeCounter_Start();
     ScriptContext_Init();
     UnlockPlayerFieldControls();
-    gFieldCallback = ExecuteTruckSequence;
+    //gFieldCallback = ExecuteTruckSequence;
     gFieldCallback2 = NULL;
     DoMapLoadLoop(&gMain.state);
     SetFieldVBlankCallback();

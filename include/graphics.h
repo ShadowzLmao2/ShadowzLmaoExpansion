@@ -1317,6 +1317,8 @@ extern const u32 gItemIcon_EjectButton[];
 extern const u16 gItemIconPalette_EjectButton[];
 extern const u32 gItemIcon_WeaknessPolicy[];
 extern const u16 gItemIconPalette_WeaknessPolicy[];
+extern const u32 gItemIcon_DirePolicy[];
+extern const u16 gItemIconPalette_DirePolicy[];
 extern const u32 gItemIcon_AssaultVest[];
 extern const u16 gItemIconPalette_AssaultVest[];
 extern const u32 gItemIcon_SafetyGoggles[];

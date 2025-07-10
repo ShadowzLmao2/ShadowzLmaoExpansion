@@ -1,16 +1,26 @@
+.set LOCALID_NURSE, 1
+.set LOCALID_UTIL, 6
+
 PetalburgCity_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PetalburgCity_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
 	.byte 0
 
 PetalburgCity_PokemonCenter_1F_OnTransition:
-	setrespawn HEAL_LOCATION_PETALBURG_CITY
+	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
 	call Common_EventScript_UpdateBrineyLocation
 	end
 
 PetalburgCity_PokemonCenter_1F_EventScript_Nurse::
 	setvar VAR_0x800B, LOCALID_PETALBURG_NURSE
 	call Common_EventScript_PkmnCenterNurse
+	waitmessage
+	waitbuttonpress
+	release
+	end
+
+PetalburgCity_PokemonCenter_1F_EventScript_Util::
+	call Common_EventScript_PkmnCenterUtil
 	waitmessage
 	waitbuttonpress
 	release

@@ -4,7 +4,7 @@ SlateportCity_PokemonCenter_1F_MapScripts::
 	.byte 0
 
 SlateportCity_PokemonCenter_1F_OnTransition:
-	setrespawn HEAL_LOCATION_SLATEPORT_CITY
+	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
 	call Common_EventScript_UpdateBrineyLocation
 	end
 
@@ -16,6 +16,13 @@ SlateportCity_PokemonCenter_1F_EventScript_Nurse::
 	release
 	end
 
+SlateportCity_PokemonCenter_1F_EventScript_Util::
+	call Common_EventScript_PkmnCenterUtil
+	waitmessage
+	waitbuttonpress
+	release
+	end
+	
 SlateportCity_PokemonCenter_1F_EventScript_Sailor::
 	msgbox SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon, MSGBOX_NPC
 	end

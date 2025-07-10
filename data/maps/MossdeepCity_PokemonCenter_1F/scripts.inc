@@ -4,7 +4,7 @@ MossdeepCity_PokemonCenter_1F_MapScripts::
 	.byte 0
 
 MossdeepCity_PokemonCenter_1F_OnTransition:
-	setrespawn HEAL_LOCATION_MOSSDEEP_CITY
+	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
 	end
 
 MossdeepCity_PokemonCenter_1F_EventScript_Nurse::
@@ -15,6 +15,13 @@ MossdeepCity_PokemonCenter_1F_EventScript_Nurse::
 	release
 	end
 
+MossdeepCity_PokemonCenter_1F_EventScript_Util::
+	call Common_EventScript_PkmnCenterUtil
+	waitmessage
+	waitbuttonpress
+	release
+	end
+	
 MossdeepCity_PokemonCenter_1F_EventScript_Woman::
 	msgbox MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable, MSGBOX_NPC
 	end
