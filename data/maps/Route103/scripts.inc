@@ -268,7 +268,8 @@ Route103_Text_MayLetsBattle:
 
 Route103_Text_MayDefeated:
 	.string "Wow! That's great!\n"
-	.string "{PLAYER}{KUN}, you're pretty good!$"
+	.string "{PLAYER}{KUN}, you're pretty good!/p"
+	.string "I should have used better moves.$"
 
 Route103_Text_MayTimeToHeadBack:
 	.string "MAY: I think I know why my dad has\n"
@@ -293,7 +294,8 @@ Route103_Text_BrendanLetsBattle:
 	.string "about!$"
 
 Route103_Text_BrendanDefeated:
-	.string "Huh, {PLAYER}, you're not too shabby.$"
+	.string "Huh, {PLAYER}, you're not too shabby/p"
+	.string "I should have brought better coverage.$"
 
 Route103_Text_BrendanTimeToHeadBack:
 	.string "BRENDAN: I think I get it.\n"
