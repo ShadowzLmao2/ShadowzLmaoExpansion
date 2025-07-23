@@ -44,6 +44,8 @@ VictoryRoad_1F_EventScript_WallyEntranceBattle::
 	clearflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY
 	copyobjectxytoperm LOCALID_VICTORY_ROAD_ENTRANCE_WALLY
 	setflag FLAG_WALLY_VICTORY_ROAD
+	setflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY
+	clearflag FLAG_HIDE_VICTORY_ROAD_EXIT_WALLY
 	copyvar VAR_VICTORY_ROAD_1F_STATE, VAR_0x8008
 	releaseall
 	end
@@ -75,23 +77,27 @@ VictoryRoad_1F_Movement_WallyApproachPlayer2:
 	walk_up
 	step_end
 
-@ This Wally appears near the entrance once his battle is triggered and remains there until the Hall of Fame is entered
 VictoryRoad_1F_EventScript_EntranceWally::
 	msgbox VictoryRoad_1F_Text_WallyEntranceBattle, MSGBOX_NPC
 	end
 
-@ This Wally appears and remains at the exit after the Hall of Fame is entered
 VictoryRoad_1F_EventScript_ExitWally::
-	trainerbattle_single TRAINER_WALLY_VR_2, VictoryRoad_1F_Text_WallyIntro, VictoryRoad_1F_Text_WallyDefeat
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, VictoryRoad_1F_EventScript_RematchWally
-	msgbox VictoryRoad_1F_Text_WallyBattle, MSGBOX_AUTOCLOSE
+	lockall
+	goto_if_set FLAG_VICTORY_ROAD_BEATEN, VictoryRoad_1F_EventScript_ExitWally2
+	msgbox VictoryRoad_1F_Text_WallyExit, MSGBOX_AUTOCLOSE
+	giveitem ITEM_HEART_SCALE
+	setflag FLAG_VICTORY_ROAD_BEATEN
+	setflag FLAG_HIDE_VICTORY_ROAD_EXIT_WALLY
+	releaseall
 	end
 
-VictoryRoad_1F_EventScript_RematchWally::
-	trainerbattle_rematch TRAINER_WALLY_VR_2, VictoryRoad_1F_Text_WallyIntro, VictoryRoad_1F_Text_WallyDefeat
-	msgbox VictoryRoad_1F_Text_WallyBattle, MSGBOX_AUTOCLOSE
+VictoryRoad_1F_EventScript_ExitWally2::
+	msgbox VictoryRoad_1F_Text_WallyExit2, MSGBOX_AUTOCLOSE
+	releaseall
 	end
+
+VictoryRoad_1F_Text_WallyExit2:
+	.string "Cya later!$"
 
 VictoryRoad_1F_EventScript_Edgar::
 	trainerbattle_single TRAINER_EDGAR, VictoryRoad_1F_Text_EdgarIntro, VictoryRoad_1F_Text_EdgarDefeat
@@ -147,11 +153,11 @@ VictoryRoad_1F_Text_WallyDefeat:
 	.string "Wow!\n"
 	.string "{PLAYER}, you are strong, after all!$"
 
-VictoryRoad_1F_Text_WallyBattle:
-	.string "WALLY: I couldn't beat you this time,\n"
-	.string "too… But one of these days, {PLAYER},\l"
-	.string "I'm going to catch up to you…\p"
-	.string "And challenge the POKéMON LEAGUE!$"
+VictoryRoad_1F_Text_WallyExit:
+	.string "WALLY: Good job beating Victory Road!\p"
+	.string "I'm headed off to beat the E4 now.\n"
+	.string "You're basically there now, so here's\l"
+	.string "a little something for you.$"
 
 VictoryRoad_1F_Text_EdgarIntro:
 	.string "I've made it this far a couple times,\n"
