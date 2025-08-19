@@ -310,7 +310,9 @@ Route110_Text_MayLetsBattle:
 	.string "How about a little battle?$"
 
 Route110_Text_MayDefeated:
-	.string "You're better than I expected!$"
+	.string "You're better than I expected!\p"
+	.string "You were able to handle my offense\n"
+	.string "very well. Well played!$"
 
 Route110_Text_MayTakeThis:
 	.string "MAY: {PLAYER}{KUN}, you've been busy\n"
@@ -322,7 +324,9 @@ Route110_Text_BrendanLetsBattle:
 	.string "I'll check for you.$"
 
 Route110_Text_BrendanDefeated:
-	.string "You're pretty good.$"
+	.string "You're pretty good.\p"
+	.string "My OP Pokemon were no match for you\n"
+	.string "without preparing for your team.$"
 
 Route110_Text_BrendanTakeThis:
 	.string "BRENDAN: {PLAYER}, you've trained\n"

@@ -430,7 +430,5 @@
       "script": "Route110_EventScript_RivalTrigger3"
     }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": []
 }

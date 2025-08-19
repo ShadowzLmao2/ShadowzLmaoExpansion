@@ -23,6 +23,7 @@ u32 GetCurrentLevelCap(void)
         {FLAG_AQUA_HIDEOUT_BEATEN,     79},
         {FLAG_BADGE07_GET,             85},
         {FLAG_BADGE08_GET,             95},
+        {FLAG_VICTORY_ROAD_BEATEN,     98},
         {FLAG_IS_CHAMPION,            100},
     };  
 
