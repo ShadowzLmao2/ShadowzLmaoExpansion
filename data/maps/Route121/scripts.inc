@@ -13,24 +13,25 @@ Route121_EventScript_SafariZoneSign::
 	msgbox Route121_Text_SafariZoneSign, MSGBOX_SIGN
 	end
 
-Route121_EventScript_AquaGruntsMoveOut::
+Route121_EventScript_AquaGruntBlocker1::
 	lockall
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
-	applymovement LOCALID_ROUTE121_GRUNT_2, Common_Movement_WalkInPlaceRight
-	waitmovement 0
-	msgbox Route121_Text_OkayMoveOutToMtPyre, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_ROUTE121_GRUNT_1, Route121_Movement_Grunt1Exit
-	applymovement LOCALID_ROUTE121_GRUNT_2, Route121_Movement_Grunt2Exit
-	applymovement LOCALID_ROUTE121_GRUNT_3, Route121_Movement_Grunt3Exit
-	waitmovement 0
-	fadedefaultbgm
-	removeobject LOCALID_ROUTE121_GRUNT_1
-	removeobject LOCALID_ROUTE121_GRUNT_2
-	removeobject LOCALID_ROUTE121_GRUNT_3
-	setvar VAR_ROUTE121_STATE, 1
+	faceplayer
+	msgbox Route121_Text_AquaGruntBlocker1, MSGBOX_DEFAULT
 	releaseall
 	end
+
+Route121_EventScript_AquaGruntBlocker2::
+	lockall
+	faceplayer
+	msgbox Route121_Text_AquaGruntBlocker2, MSGBOX_DEFAULT
+	releaseall
+	end
+
+Route121_Text_AquaGruntBlocker1:
+	.string "We can't let you pass until you beat Winona.$"
+
+Route121_Text_AquaGruntBlocker2:
+	.string "I can't let you pass until you beat Maxie.$"
 
 Route121_Movement_Grunt1Exit:
 	walk_down

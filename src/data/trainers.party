@@ -7388,8 +7388,35 @@ Music: Twins
 Double Battle: No
 AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Pikachu @ Oran Berry
-Level: 30
+Kilowattrel @ Life Orb
+Level: 77
+Ability: Wind Power
+- Tailwind
+- Hurricane
+- Volt Switch
+- Thunderbolt
+
+Jumpluff @ Choice Band
+Level: 77
+Ability: Wind Rider
+- U-Turn
+- Floaty Fall
+- Petal Blizzard
+- Switcheroo
+
+Silvally @ Flying Memory
+Level: 77
+- Multi Attack
+- Swords Dance
+- Reversal
+- Parting Shot
+
+Tornadus Therian @ Heavy-Duty Boots
+Level: 76
+Ability: Regenerator
+- Bleakwind Storm
+- U-Turn
+- Heat Wave
 
 === TRAINER_BETHANY ===
 Name: BETHANY
@@ -18559,11 +18586,44 @@ Items: Hyper Potion
 Double Battle: No
 AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Loudred
-Level: 29
+Smeargle @ Focus Sash
+Level: 79
+Ability: Moody
+- Substitute
+- Protect
+- Baton Pass
+- Sand Attack
 
-Vigoroth
-Level: 29
+Diggersby @ Life Orb
+Level: 77
+Ability: Huge Power
+- Earthquake
+- Knock Off
+- Last Resort
+- Power Up Punch
+
+Simipour @ Choice Specs
+Level: 77
+Ability: Rebel Tactics
+- Hydro Pump
+- Ice Beam
+- Hyper Beam
+- Scald
+
+Regieleki @ Expert Belt
+Level: 75
+Ability: Transistor
+- Volt Switch
+- Electro Ball
+- Tera Blast
+- Rapid Spin
+
+Giratina @ Leftovers
+Level: 74
+- Protect
+- Defog
+- Night Shade
+- Will o Wisp
 
 === TRAINER_MAY_RUSTBORO_TREECKO ===
 Name: MAY

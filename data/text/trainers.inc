@@ -3146,9 +3146,8 @@ Route121_Text_VanessaDefeat:
 	.string "This isn't what I meant!$"
 
 Route121_Text_VanessaPostBattle:
-	.string "I'm going to a CONTEST in LILYCOVE.\p"
-	.string "My POKéMON should have no problem\n"
-	.string "sweeping the MASTER CLASS.$"
+	.string "I'm named after the famous hero\n"
+	.string "from Mondstat. She's dead tho.$"
 
 Route121_Text_WalterIntro:
 	.string "With my POKéMON, I have traveled\n"
