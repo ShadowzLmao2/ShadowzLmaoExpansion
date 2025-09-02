@@ -723,8 +723,39 @@ Music: Magma
 Double Battle: No
 AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Numel
-Level: 60
+Slowking-Galar @ Heavy-Duty Boots
+Level: 86
+Ability: Regenerator
+Nature: Sassy
+- Toxic
+- Eerie Spell
+- Slack Off
+- Chilly Reception
+
+Heatran @ Binding Band
+Level: 86
+Ability: Flash Fire
+Nature: Calm
+- Fire Spin
+- Stealth Rock
+- Will o Wisp
+- Earth Power
+
+Wo Chien @ Rocky Helmet
+Level: 86
+Nature: Relaxed
+- Leech Seed
+- Protect
+- Knock Off
+- Ruination
+
+Iron Valiant @ Booster Energy
+Level: 85
+Nature: Naive
+- Moonblast
+- Calm Mind
+- Shadow Ball
+- Close Combat
 
 === TRAINER_GRUNT_MT_PYRE_1 ===
 Name: GRUNT
@@ -3001,14 +3032,39 @@ Music: Magma
 Double Battle: No
 AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Mightyena
-Level: 26
+Silvally @ Fire Memory
+Level: 87
+Nature: Jolly
+- Parting Shot
+- Multi Attack
+- Swords Dance
+- Explosion
 
-Mightyena
-Level: 28
+Gyarados @ Wacan Berry
+Level: 86
+Nature: Adamant
+Ability: Intimidate
+- Dragon Dance
+- Earthquake
+- Aqua Tail
+- Sky Drop
 
-Numel
-Level: 30
+Solgaleo @ Weakness Policy
+Level: 85
+Nature: Adamant
+- Agility
+- Sunsteel Strike
+- Morning Sun
+- Zen Headbutt
+
+Gliscor @ Toxic Orb
+Level: 85
+Nature: Adamant
+Ability: Poison Heal
+- Swords Dance
+- Sky Drop
+- Protect
+- Earthquake
 
 === TRAINER_CINDY_2 ===
 Name: CINDY
@@ -13711,11 +13767,41 @@ Music: Magma
 Double Battle: No
 AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Zubat
-Level: 31
+Heatran @ Shuca Berry
+Level: 86
+Nature: Bold
+Ability: Flash Fire
+- Stealth Rock
+- Magma Storm
+- Will o Wisp
+- Body Press
 
-Poochyena
-Level: 31
+Breloom @ Toxic Orb
+Level: 86
+Nature: Jolly
+Ability: Poison Heal
+- Protect
+- Spore
+- U-Turn
+- Close Combat
+
+Heatmor @ Petaya Berry
+Level: 88
+Nature: Modest
+Ability: Gluttony
+- Flamethrower
+- Giga Drain
+- Substitute
+- Scorching Sands
+
+Kingambit @ Life Orb
+Level: 86
+Nature: Adamant
+Ability: Defiant
+- Sucker Punch
+- Swords Dance
+- Shadow Claw
+- Iron Head
 
 === TRAINER_GRUNT_SPACE_CENTER_4 ===
 Name: GRUNT
@@ -13726,8 +13812,39 @@ Music: Magma
 Double Battle: No
 AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Baltoy
-Level: 32
+Torkoal @ Custap Berry
+Level: 86
+Ability: Shell Armor
+Nature: Modest
+- Eruption
+- Flamethrower
+- Hyper Beam
+- Earth Power
+
+Entei @ Leftovers
+Level: 86
+Ability: Flash Fire
+Nature: Modest
+- Eruption
+- Protect
+- Sunny Day
+- Solar Beam
+
+Shiftry @ Choice Band
+Level: 86
+Ability: Chlorophyll
+Nature: Adamant
+- Explosion
+- Knock Off
+
+Aerodactyl @ Aerodactylite
+Level: 85
+Ability: Rock Head
+Nature: Adamant
+- Head Smash
+- Brave Bird
+- Dragon Claw
+- Fire Fang
 
 === TRAINER_GRUNT_SPACE_CENTER_5 ===
 Name: GRUNT
@@ -13738,8 +13855,31 @@ Music: Magma
 Double Battle: No
 AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Zubat
-Level: 32
+Arceus @ Leftovers
+Level: 83
+Nature: Bold
+- Thunder Wave
+- Recover
+- Extreme Speed
+- Knock Off
+
+Blissey @ Leftovers
+Level: 85
+Nature: Bold
+Ability: Natural Cure
+- Seismic Toss
+- Soft Boiled
+- Thunder Wave
+- Ice Beam
+
+Dondozo @ Shell Bell
+Level: 85
+Nature: Bold
+Ability: Unaware
+- Avalanche
+- Wave Crash
+- Curse
+- Zen Headbutt
 
 === TRAINER_GRUNT_SPACE_CENTER_6 ===
 Name: GRUNT
@@ -13750,8 +13890,24 @@ Music: Magma
 Double Battle: No
 AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Mightyena
-Level: 32
+Gengar @ Gengarite
+Level: 84
+Nature: Timid
+Ability: Levitate
+- Thunder Wave
+- Recover
+- Knock Off
+- Extreme Speed
+
+Munkidori @ Float Stone
+Level: 85
+Nature: Adamant
+Ability: Technician
+- Aerial Ace
+- Beat Up
+- Poison Tail
+- Play Rough
+
 
 === TRAINER_GRUNT_SPACE_CENTER_7 ===
 Name: GRUNT
@@ -13762,8 +13918,31 @@ Music: Magma
 Double Battle: No
 AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Baltoy
-Level: 32
+Greninja @ Life Orb
+Level: 84
+Nature: Modest
+Ability: Protean
+- Spikes
+- Hydro Pump
+- Ice Beam
+- Dark Pulse
+
+Slaking @ Choice Band
+Level: 84
+Nature: Adamant
+- Double Edge
+- Slack Off
+- Sucker Punch
+- Earthquake
+
+Alakazam @ Alakazite
+Level: 85
+Nature: Modest
+Ability: Magic Guard
+- Psychic
+- Psyshock
+- Shadow Ball
+- Charge Beam
 
 === TRAINER_MACEY ===
 Name: MACEY

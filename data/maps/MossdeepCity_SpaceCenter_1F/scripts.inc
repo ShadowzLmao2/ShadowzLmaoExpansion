@@ -335,6 +335,13 @@ MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind:
 	.string "the skies and flies into space…\p"
 	.string "It boggles my mind!$"
 
+MossdeepCity_SpaceCenter_1F_EventScript_Nurse::
+	lockall
+	call Common_EventScript_OutOfCenterPartyHeal
+	waitmessage
+	releaseall
+	end
+
 MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream:
 	.string "A giant chunk of metal bursts through\n"
 	.string "the skies and flies into space…\p"
@@ -343,8 +350,6 @@ MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream:
 	.string "I'm not having any of that!$"
 
 MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel:
-	.string "STEVEN: {PLAYER}{KUN}, have you read that\n"
-	.string "proclamation already?\p"
 	.string "TEAM MAGMA is coming after the rocket\n"
 	.string "fuel on this island.\p"
 	.string "I don't know what they'd need it for,\n"

@@ -2426,7 +2426,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_SWELLOW] =
     {
         .baseHP        = 70,
-        .baseAttack    = 105,
+        .baseAttack    = 95,
         .baseDefense   = 65,
         .baseSpeed     = 125,
         .baseSpAttack  = P_UPDATED_STATS >= GEN_7 ? 75 : 50,
@@ -4174,11 +4174,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_HARIYAMA] =
     {
         .baseHP        = 140,
-        .baseAttack    = 110,
-        .baseDefense   = 60,
+        .baseAttack    = 111,
+        .baseDefense   = 62,
         .baseSpeed     = 50,
         .baseSpAttack  = 40,
-        .baseSpDefense = 50,
+        .baseSpDefense = 52,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 200,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 166 : 184,
@@ -4856,8 +4856,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_ARON] =
     {
         .baseHP        = 50,
-        .baseAttack    = 70,
-        .baseDefense   = 100,
+        .baseAttack    = 65,
+        .baseDefense   = 95,
         .baseSpeed     = 30,
         .baseSpAttack  = 40,
         .baseSpDefense = 40,

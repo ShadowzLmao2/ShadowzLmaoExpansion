@@ -9018,7 +9018,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Has a high critical-hit\n"
             "ratio. 10% poison."),
         .effect = EFFECT_HIT,
-        .power = 50,
+        .power = 55,
         .type = TYPE_POISON,
         .accuracy = 100,
         .criticalHitStage = 1,

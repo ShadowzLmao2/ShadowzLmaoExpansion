@@ -8741,7 +8741,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_MACHAMP] =
     {
         .baseHP        = 90,
-        .baseAttack    = 130,
+        .baseAttack    = 125,
         .baseDefense   = 80,
         .baseSpeed     = 55,
         .baseSpAttack  = 65,

@@ -3062,7 +3062,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_CONKELDURR] =
     {
         .baseHP        = 105,
-        .baseAttack    = 140,
+        .baseAttack    = 135,
         .baseDefense   = 115,
         .baseSpeed     = 42,
         .baseSpAttack  = 55,
@@ -3347,7 +3347,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_THROH] =
     {
         .baseHP        = 120,
-        .baseAttack    = 100,
+        .baseAttack    = 110,
         .baseDefense   = 85,
         .baseSpeed     = 45,
         .baseSpAttack  = 30,
