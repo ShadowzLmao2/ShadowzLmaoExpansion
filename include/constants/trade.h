@@ -5,13 +5,16 @@
 #define TRADE_PARTNER 1
 
 // In-game Trade IDs
-#define INGAME_TRADE_PSYDUCK 0
-#define INGAME_TRADE_PUPITAR 1
-#define INGAME_TRADE_CHI_YU 2
-#define INGAME_TRADE_MEOWTH 3
-#define INGAME_TRADE_WO_CHIEN 4
-#define INGAME_TRADE_CHIEN_PAO 5
-#define INGAME_TRADE_TING_LU 6
+enum InGameTradeID
+{
+    INGAME_TRADE_PSYDUCK,
+    INGAME_TRADE_PUPITAR,
+    INGAME_TRADE_CHI_YU,
+    INGAME_TRADE_MEOWTH,
+    INGAME_TRADE_WO_CHIEN,
+    INGAME_TRADE_CHIEN_PAO,
+    INGAME_TRADE_TING_LU,
+};
 
 // Return values for CanTradeSelectedMon and CanSpinTradeMon
 #define CAN_TRADE_MON              0

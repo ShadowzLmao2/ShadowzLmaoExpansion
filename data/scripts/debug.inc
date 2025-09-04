@@ -17,97 +17,9 @@ Debug_CheatStart::
 	setflag FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG
 	setvar VAR_BIRCH_LAB_STATE, 2
 	setvar VAR_ROUTE101_STATE, 3
-	setflag FLAG_HIDE_ROUTE_101_ZIGZAGOON
-	setflag FLAG_BADGE01_GET
-	setflag FLAG_BADGE02_GET
-	setflag FLAG_BADGE03_GET
-	setflag FLAG_BADGE04_GET
-	setflag FLAG_BADGE05_GET
-	setflag FLAG_BADGE06_GET
-	setflag FLAG_BADGE07_GET
-	setflag FLAG_BADGE08_GET
-	giveitem ITEM_RARE_CANDY
-	giveitem ITEM_MAX_REPEL, 99
-	giveitem ITEM_TM_FOCUS_PUNCH
-	giveitem ITEM_TM_DRAGON_CLAW
-	giveitem ITEM_TM_SCALD
-	giveitem ITEM_TM_CALM_MIND
-	giveitem ITEM_TM_HOWL
-	giveitem ITEM_TM_TOXIC
-	giveitem ITEM_TM_FLIP_TURN
-	giveitem ITEM_TM_BULLET_SEED
-	giveitem ITEM_TM_U_TURN
-	giveitem ITEM_TM_TAUNT
-	giveitem ITEM_TM_WAVE_CRASH
-	giveitem ITEM_TM_ICE_BEAM
-	giveitem ITEM_TM_BLIZZARD
-	giveitem ITEM_TM_HYPER_BEAM
-	giveitem ITEM_TM_LIGHT_SCREEN
-	giveitem ITEM_TM_PROTECT
-	giveitem ITEM_TM_FREEZE_DRY
-	giveitem ITEM_TM_GIGA_DRAIN
-	giveitem ITEM_TM_SAFEGUARD
-	giveitem ITEM_TM_FLASH_CANNON
-	giveitem ITEM_TM_SOLAR_BEAM
-	giveitem ITEM_TM_IRON_TAIL
-	giveitem ITEM_TM_THUNDERBOLT
-	giveitem ITEM_TM_THUNDER
-	giveitem ITEM_TM_EARTHQUAKE
-	giveitem ITEM_TM_RETURN
-	giveitem ITEM_TM_DIG
-	giveitem ITEM_TM_PSYCHIC
-	giveitem ITEM_TM_SHADOW_BALL
-	giveitem ITEM_TM_BRICK_BREAK
-	giveitem ITEM_TM_SCALE_SHOT
-	giveitem ITEM_TM_REFLECT
-	giveitem ITEM_TM_FLING
-	giveitem ITEM_TM_FLAMETHROWER
-	giveitem ITEM_TM_SLUDGE_BOMB
-	giveitem ITEM_TM_STEALTH_ROCK
-	giveitem ITEM_TM_FIRE_BLAST
-	giveitem ITEM_TM_ROCK_TOMB
-	giveitem ITEM_TM_ACROBATICS
-	giveitem ITEM_TM_TORMENT
-	giveitem ITEM_TM_FACADE
-	giveitem ITEM_TM_SECRET_POWER
-	giveitem ITEM_TM_REST
-	giveitem ITEM_TM_CHARGE_BEAM
-	giveitem ITEM_TM_STONE_EDGE
-	giveitem ITEM_TM_STEEL_WING
-	giveitem ITEM_TM_DRAIN_PUNCH
-	giveitem ITEM_TM_POLTERGEIST
-	giveitem ITEM_TM_OVERHEAT
-	giveitem ITEM_TM_POLLEN_PUFF
-	giveitem ITEM_TM_LOW_KICK
-	giveitem ITEM_TM_CLOSE_COMBAT
-	giveitem ITEM_TM_CRUNCH
-	giveitem ITEM_HM_CUT
-	giveitem ITEM_HM_ROCK_SMASH
-	giveitem ITEM_HM_STRENGTH
-	giveitem ITEM_HM_FLY
-	giveitem ITEM_HM_FLASH
-	giveitem ITEM_HM_SURF
-	giveitem ITEM_HM_DIVE
-	giveitem ITEM_HM_WATERFALL
-	giveitem ITEM_HEART_SCALE, 15
-	giveitem ITEM_REVIVE, 3
-	setflag FLAG_HARDCORE_MODE_ENABLED
-	giveitem ITEM_MEGA_RING
-	givemon SPECIES_CHARIZARD, 100, ITEM_CHARIZARDITE_Y,ITEM_POKE_BALL,NATURE_MODEST,   0, 1, 248, 0,   32,  0,   228, 0,  0, 0, 0, 0, 0, 0, MOVE_HEAT_WAVE, MOVE_PROTECT, MOVE_SOLAR_BEAM
-	givemon SPECIES_AEGISLASH, 100, ITEM_CLEAR_AMULET, ITEM_POKE_BALL, NATURE_ADAMANT,  0, 1, 0,   252, 0,   0,   0,   0,  0, 0, 0, 0, 0, 0, MOVE_KINGS_SHIELD, MOVE_SACRED_SWORD
-	givemon SPECIES_ZEBSTRIKA, 100, ITEM_CHOICE_SCARF, ITEM_POKE_BALL, NATURE_ADAMANT,  0, 1, 0,   0,   0,   48,  0,   0,  0, 0, 0, 0, 0, 0, MOVE_CRUNCH, MOVE_WILD_CHARGE
-	givemon SPECIES_ILLUMISE,  100, ITEM_COVERT_CLOAK, ITEM_POKE_BALL, NATURE_BOLD,     2, 1, 248, 0,   24,  48,  148, 40, 0, 0, 0, 0, 0, 0, MOVE_TAILWIND, MOVE_U_TURN, MOVE_CHARM, MOVE_MOONLIGHT
-	givemon SPECIES_GENESECT,  100, ITEM_CHILL_DRIVE,  ITEM_POKE_BALL, NATURE_NAIVE,    0, 1, 0,   80,  132, 132, 80,  0,  0, 0, 0, 0, 0, 0, MOVE_TECHNO_BLAST, MOVE_IRON_HEAD, MOVE_FLAMETHROWER, MOVE_BLAZE_KICK
-	givemon SPECIES_SCEPTILE, 100, ITEM_SCEPTILITE
-	givemon SPECIES_SWAMPERT, 100, ITEM_SWAMPERTITE
-	givemon SPECIES_BLAZIKEN, 100, ITEM_BLAZIKENITE
-	giveitem ITEM_CHARIZARDITE_X
-	givemon SPECIES_VENUSAUR, 100, ITEM_VENUSAURITE
-	givemon SPECIES_BLASTOISE, 100, ITEM_BLASTOISINITE
-	givemon SPECIES_CHI_YU, 100, ITEM_NONE
-	givemon SPECIES_WO_CHIEN, 100, ITEM_NONE
-	givemon SPECIES_CHIEN_PAO, 100, ITEM_NONE
-	givemon SPECIES_TING_LU, 100, ITEM_NONE
+	givemon SPECIES_TREECKO, 20, ITEM_NONE
+	givemon SPECIES_TORCHIC, 20, ITEM_NONE
+	givemon SPECIES_MUDKIP, 20, ITEM_NONE
 	setflag FLAG_SYS_POKEDEX_GET
 	special SetUnlockedPokedexFlags
 	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
@@ -116,13 +28,24 @@ Debug_CheatStart::
 	special EnableNationalPokedex
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	setflag FLAG_SYS_B_DASH
-	setvar VAR_LITTLEROOT_TOWN_STATE, 2 @ 2: Received Running Shoes
+	setvar VAR_LITTLEROOT_TOWN_STATE, 4 @ 4: Received Running Shoes
 	setvar VAR_LITTLEROOT_INTRO_STATE, 7 @ 7: Told to go meet rival
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 2 @ 2: Met Rival's Mom (and is corresponding gender)
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 2 @ 2: Met Rival's Mom (and is corresponding gender)
 	setvar VAR_LITTLEROOT_RIVAL_STATE, 4 @ 4: Received Pokedex
 	setflag FLAG_RECEIVED_BIKE
 	additem ITEM_ACRO_BIKE
+	setvar VAR_BRINEY_HOUSE_STATE, 1
+	setvar VAR_ROUTE116_STATE, 2
+	setflag FLAG_HIDE_ROUTE_116_MR_BRINEY
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
 	setflag FLAG_VISITED_LITTLEROOT_TOWN
 	setflag FLAG_VISITED_OLDALE_TOWN
 	setflag FLAG_VISITED_DEWFORD_TOWN
@@ -139,6 +62,10 @@ Debug_CheatStart::
 	setflag FLAG_VISITED_MOSSDEEP_CITY
 	setflag FLAG_VISITED_SOOTOPOLIS_CITY
 	setflag FLAG_VISITED_EVER_GRANDE_CITY
+	setflag FLAG_LANDMARK_POKEMON_LEAGUE
+	setflag FLAG_LANDMARK_BATTLE_FRONTIER
+	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
+	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
 	release
 	end
 
@@ -269,6 +196,12 @@ Debug_PokemonStorageSize::
 	.string "{PKMN}Storage size: {STR_VAR_1}b/{STR_VAR_2}b.\n"
 	.string "Free space: {STR_VAR_3}b.$"
 
+Debug_CheckROMSpace::
+	callnative CheckROMSize
+	msgbox Debug_ROMSize, MSGBOX_DEFAULT
+	release
+	end
+
 Debug_ROMSize::
 	.string "ROM size: {STR_VAR_1}MB/32MB.\n"
 	.string "Free space: {STR_VAR_2}MB.$"
@@ -337,6 +270,24 @@ Debug_ShowExpansionVersion::
 Debug_ExpansionVersion:
 	.string "pokeemerald-expansion {STR_VAR_1}$"
 
+Debug_Follower_NPC_Not_Enabled::
+	msgbox Debug_Enable_To_Use_Follower_NPCs, MSGBOX_DEFAULT
+	release
+	end
+
+Debug_Enable_To_Use_Follower_NPCs:
+	.string "Feature unavailable.\nSet FNPC_ENABLE_NPC_FOLLOWERS to\lTRUE in 'include/config/follower_npc.h'.$"
+
+Debug_Follower_NPC_Event_Script::
+	lock
+	facefollowernpc
+	msgbox Debug_Follower_NPC_Test_Message, MSGBOX_DEFAULT
+	releaseall
+	end
+
+Debug_Follower_NPC_Test_Message:
+	.string "This is a Follower NPC test.$"
+
 Debug_EventScript_Steven_Multi::
 	call MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle
 	release
@@ -364,6 +315,19 @@ Debug_EventScript_InflictStatus1::
 	lockall
 	getpartysize
 	goto_if_eq VAR_RESULT, 0, Debug_NoPokemon
+	dynmultipush Debug_EventScript_InflictStatus1_Text_Single, 0
+	dynmultipush Debug_EventScript_InflictStatus1_Text_PartyWide, 1
+	dynmultipush Debug_EventScript_InflictStatus1_Text_Close, 2
+	dynmultistack 0, 0, FALSE, 3 FALSE, 0, NULL
+	switch VAR_RESULT
+	case 0, Debug_EventScript_InflictStatus1_Single
+	case 1, Debug_EventScript_InflictStatus1_Party
+	case 2, Debug_EventScript_InflictStatus1_Close
+Debug_EventScript_InflictStatus1_Close:
+	releaseall
+	end
+
+Debug_EventScript_InflictStatus1_Single:
 	special ChoosePartyMon
 	waitstate
 	goto_if_ge VAR_0x8004, PARTY_SIZE, Debug_EventScript_InflictStatus1_Close
@@ -373,26 +337,60 @@ Debug_EventScript_InflictStatus1::
 	dynmultipush Debug_EventScript_InflictStatus1_Text_Paralysis, 1
 	dynmultipush Debug_EventScript_InflictStatus1_Text_Sleep, 2
 	dynmultipush Debug_EventScript_InflictStatus1_Text_Burn, 3
-	dynmultipush Debug_EventScript_InflictStatus1_Text_Frostbite, 4
-	dynmultipush Debug_EventScript_InflictStatus1_Text_Close, 5
+	dynmultipush Debug_EventScript_InflictStatus1_Text_Freeze, 4
+	dynmultipush Debug_EventScript_InflictStatus1_Text_Frostbite, 5
+	dynmultipush Debug_EventScript_InflictStatus1_Text_Close, 6
 	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
 	switch VAR_RESULT
 	case 0, Debug_EventScript_InflictStatus1_Single_Poison
 	case 1, Debug_EventScript_InflictStatus1_Single_Paralysis
 	case 2, Debug_EventScript_InflictStatus1_Single_Sleep
 	case 3, Debug_EventScript_InflictStatus1_Single_Burn
-	case 4, Debug_EventScript_InflictStatus1_Single_Frostbite
-	case 5, Debug_EventScript_InflictStatus1_Close
+	case 4, Debug_EventScript_InflictStatus1_Single_Freeze
+	case 5, Debug_EventScript_InflictStatus1_Single_Frostbite
+	case 6, Debug_EventScript_InflictStatus1_Close
 	case MULTI_B_PRESSED, Debug_EventScript_InflictStatus1_Close
 	releaseall
 	end
-Debug_EventScript_InflictStatus1_Close:
+
+Debug_EventScript_SetHiddenNature::
+	special ChoosePartyMon
+	waitstate
+	goto_if_ge VAR_0x8004, PARTY_SIZE, Debug_EventScript_InflictStatus1_Close
+	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+	goto_if_eq VAR_RESULT, SPECIES_EGG, Debug_EventScript_InflictStatus1_Close
+	dynmultipush Debug_EventScript_ChangeNature_Text_Hardy, 0
+	dynmultipush Debug_EventScript_ChangeNature_Text_Lonely, 1
+	dynmultipush Debug_EventScript_ChangeNature_Text_Brave, 2
+	dynmultipush Debug_EventScript_ChangeNature_Text_Adamant, 3
+	dynmultipush Debug_EventScript_ChangeNature_Text_Naughty, 4
+	dynmultipush Debug_EventScript_ChangeNature_Text_Bold, 5
+	dynmultipush Debug_EventScript_ChangeNature_Text_Docile, 6
+	dynmultipush Debug_EventScript_ChangeNature_Text_Relaxed, 7
+	dynmultipush Debug_EventScript_ChangeNature_Text_Impish, 8
+	dynmultipush Debug_EventScript_ChangeNature_Text_Lax, 9
+	dynmultipush Debug_EventScript_ChangeNature_Text_Timid, 10
+	dynmultipush Debug_EventScript_ChangeNature_Text_Hasty, 11
+	dynmultipush Debug_EventScript_ChangeNature_Text_Serious, 12
+	dynmultipush Debug_EventScript_ChangeNature_Text_Jolly, 13
+	dynmultipush Debug_EventScript_ChangeNature_Text_Naive, 14
+	dynmultipush Debug_EventScript_ChangeNature_Text_Modest, 15
+	dynmultipush Debug_EventScript_ChangeNature_Text_Mild, 16
+	dynmultipush Debug_EventScript_ChangeNature_Text_Quiet, 17
+	dynmultipush Debug_EventScript_ChangeNature_Text_Bashful, 18
+	dynmultipush Debug_EventScript_ChangeNature_Text_Rash, 19
+	dynmultipush Debug_EventScript_ChangeNature_Text_Calm, 20
+	dynmultipush Debug_EventScript_ChangeNature_Text_Gentle, 21
+	dynmultipush Debug_EventScript_ChangeNature_Text_Sassy, 22
+	dynmultipush Debug_EventScript_ChangeNature_Text_Careful, 23
+	dynmultipush Debug_EventScript_ChangeNature_Text_Quirky, 24
+	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case MULTI_B_PRESSED, Debug_EventScript_InflictStatus1_Close
+    special SetHiddenNature
 	releaseall
 	end
 
-Debug_EventScript_InflictStatus1_Text_Close:
-	.string "Close$"
-	
 Debug_EventScript_InflictStatus1_Single_Poison:
 	setstatus1 STATUS1_POISON, VAR_0x8004
 	releaseall
@@ -413,10 +411,75 @@ Debug_EventScript_InflictStatus1_Single_Burn:
 	releaseall
 	end
 
+Debug_EventScript_InflictStatus1_Single_Freeze:
+	setstatus1 STATUS1_FREEZE, VAR_0x8004
+	releaseall
+	end
+
 Debug_EventScript_InflictStatus1_Single_Frostbite:
 	setstatus1 STATUS1_FROSTBITE, VAR_0x8004
 	releaseall
 	end
+
+Debug_EventScript_InflictStatus1_Party:
+	dynmultipush Debug_EventScript_InflictStatus1_Text_Poison, 0
+	dynmultipush Debug_EventScript_InflictStatus1_Text_Paralysis, 1
+	dynmultipush Debug_EventScript_InflictStatus1_Text_Sleep, 2
+	dynmultipush Debug_EventScript_InflictStatus1_Text_Burn, 3
+	dynmultipush Debug_EventScript_InflictStatus1_Text_Freeze, 4
+	dynmultipush Debug_EventScript_InflictStatus1_Text_Frostbite, 5
+	dynmultipush Debug_EventScript_InflictStatus1_Text_Close, 6
+	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case 0, Debug_EventScript_InflictStatus1_Party_Poison
+	case 1, Debug_EventScript_InflictStatus1_Party_Paralysis
+	case 2, Debug_EventScript_InflictStatus1_Party_Sleep
+	case 3, Debug_EventScript_InflictStatus1_Party_Burn
+	case 4, Debug_EventScript_InflictStatus1_Party_Freeze
+	case 5, Debug_EventScript_InflictStatus1_Party_Frostbite
+	case 6, Debug_EventScript_InflictStatus1_Close
+	case MULTI_B_PRESSED, Debug_EventScript_InflictStatus1_Close
+	releaseall
+	end
+
+Debug_EventScript_InflictStatus1_Party_Poison:
+	setstatus1 STATUS1_POISON, PARTY_SIZE
+	releaseall
+	end
+
+Debug_EventScript_InflictStatus1_Party_Paralysis:
+	setstatus1 STATUS1_PARALYSIS, PARTY_SIZE
+	releaseall
+	end
+
+Debug_EventScript_InflictStatus1_Party_Sleep:
+	setstatus1 STATUS1_SLEEP, PARTY_SIZE
+	releaseall
+	end
+
+Debug_EventScript_InflictStatus1_Party_Burn:
+	setstatus1 STATUS1_BURN, PARTY_SIZE
+	releaseall
+	end
+
+Debug_EventScript_InflictStatus1_Party_Freeze:
+	setstatus1 STATUS1_FREEZE, PARTY_SIZE
+	releaseall
+	end
+
+Debug_EventScript_InflictStatus1_Party_Frostbite:
+	setstatus1 STATUS1_FROSTBITE, PARTY_SIZE
+	releaseall
+	end
+
+Debug_EventScript_InflictStatus1_Text_Single:
+	.string "Single$"
+
+Debug_EventScript_InflictStatus1_Text_PartyWide:
+	.string "Party-wide$"
+
+Debug_EventScript_InflictStatus1_Text_Close:
+	.string "Close$"
 
 Debug_EventScript_InflictStatus1_Text_Poison:
 	.string "Poison$"
@@ -430,8 +493,62 @@ Debug_EventScript_InflictStatus1_Text_Sleep:
 Debug_EventScript_InflictStatus1_Text_Burn:
 	.string "Burn$"
 
+Debug_EventScript_InflictStatus1_Text_Freeze:
+	.string "Freeze$"
+
 Debug_EventScript_InflictStatus1_Text_Frostbite:
 	.string "Frostbite$"
+
+Debug_EventScript_ChangeNature_Text_Hardy:
+	.string "Hardy$"
+Debug_EventScript_ChangeNature_Text_Lonely:
+	.string "Lonely$"
+Debug_EventScript_ChangeNature_Text_Brave:
+	.string "Brave$"
+Debug_EventScript_ChangeNature_Text_Adamant:
+	.string "Adamant$"
+Debug_EventScript_ChangeNature_Text_Naughty:
+	.string "Naughty$"
+Debug_EventScript_ChangeNature_Text_Bold:
+	.string "Bold$"
+Debug_EventScript_ChangeNature_Text_Docile:
+	.string "Docile$"
+Debug_EventScript_ChangeNature_Text_Relaxed:
+	.string "Relaxed$"
+Debug_EventScript_ChangeNature_Text_Impish:
+	.string "Impish$"
+Debug_EventScript_ChangeNature_Text_Lax:
+	.string "Lax$"
+Debug_EventScript_ChangeNature_Text_Timid:
+	.string "Timid$"
+Debug_EventScript_ChangeNature_Text_Hasty:
+	.string "Hasty$"
+Debug_EventScript_ChangeNature_Text_Serious:
+	.string "Serious$"
+Debug_EventScript_ChangeNature_Text_Jolly:
+	.string "Jolly$"
+Debug_EventScript_ChangeNature_Text_Naive:
+	.string "Naive$"
+Debug_EventScript_ChangeNature_Text_Modest:
+	.string "Modest$"
+Debug_EventScript_ChangeNature_Text_Mild:
+	.string "Mild$"
+Debug_EventScript_ChangeNature_Text_Quiet:
+	.string "Quiet$"
+Debug_EventScript_ChangeNature_Text_Bashful:
+	.string "Bashful$"
+Debug_EventScript_ChangeNature_Text_Rash:
+	.string "Rash$"
+Debug_EventScript_ChangeNature_Text_Calm:
+	.string "Calm$"
+Debug_EventScript_ChangeNature_Text_Gentle:
+	.string "Gentle$"
+Debug_EventScript_ChangeNature_Text_Sassy:
+	.string "Sassy$"
+Debug_EventScript_ChangeNature_Text_Careful:
+	.string "Careful$"
+Debug_EventScript_ChangeNature_Text_Quirky:
+	.string "Quirky$"
 
 Debug_EventScript_EWRAMCounters::
 	callnative CheckEWRAMCounters
