@@ -13,34 +13,62 @@ Pic: Steven
 Gender: Male
 Music: Male
 Back Pic: Steven
-AI: Basic Trainer
+AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Metang
-Brave Nature
-Level: 42
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 Def / 6 SpA
-- Light Screen
-- Psychic
-- Reflect
-- Metal Claw
+Heatran @ Leftovers
+Level: 87
+EVs: 252 HP / 8 Def / 248 Spe
+Ability: Flash Fire
+Nature: Modest
+- Ancient Power
+- Heat Wave
+- Flash Cannon
+- Substitute
 
-Skarmory
-Impish Nature
-Level: 43
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 HP / 6 SpA / 252 SpD
-- Toxic
-- Aerial Ace
-- Protect
-- Steel Wing
+Tinkaton @ Occa Berry
+Level: 87
+EVs: 244 HP / 8 Def / 92 SpD / 164 Spe
+Ability: Pickpocket
+Nature: Jolly
+- Gigaton Hammer
+- Knock Off
+- Fake Out
+- Thunder Wave
 
-Aggron
-Adamant Nature
-Level: 44
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 SpA / 6 SpD
-- Thunder
-- Protect
-- Solar Beam
+Whimsicott @ Focus Sash
+Level: 87
+EVs: 252 HP / 24 Def / 152 SpA / 56 SpD / 24 Spe
+Ability: Chlorophyll
+Nature: Timid
+- Tailwind
+- Helping Hand
+- Moonblast
+- Tickle
+
+Goodra-Hisui @ Assault Vest
+Level: 87
+EVs: 248 HP / 112 Def / 140 SpA / 8 Spe
+Ability: Sap Sipper
+Nature: Modest
+- Dragon Pulse
+- Flash Cannon
+- Surf
+- Mud Shot
+
+Baxcalibur @ Life Orb
+Level: 87
+EVs: 24 HP / 252 Atk / 8 Def / 4 SpD / 216 Spe
+Nature: Adamant
+- Ice Spinner
 - Dragon Claw
+- Earthquake
+- Protect
+
+Rayquaza @ Life Orb
+Level: 87
+EVs: 56 HP / 252 Atk / 4 Def / 196 Spe
+Nature: Adamant
+- Dragon Ascent
+- Dragon Dance
+- Dragon Claw
+- Aqua Tail

@@ -11896,57 +11896,65 @@ Pic: Magma Admin
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching / Force Setup First Turn
+AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Blacephalon @ Focus Sash
-Ability: Beast Boost
-Level: 87
-EVs: 44 HP / 4 Def / 252 SpA / 208 Spe
-Timid Nature
-- After You
-- Mind Blown
-- Shadow Ball
-- Misty Explosion
-
-Chi-Yu @ Sitrus Berry
-Ability: Beads of Ruin
-Level: 87
-Tera Type: Fairy
-EVs: 248 HP / 252 Def / 8 SpD
-Calm Nature
+Charizard @ Charizardite Y
+Level: 85
+EVs: 248 HP / 16 Def / 244 Spe
+Nature: Modest
+- Heat Wave
+- Overheat
+- Air Slash
 - Protect
-- Will-O-Wisp
-- Hex
-- Reflect
 
-Ho-Oh @ Eject Button
-Ability: Regenerator
-Level: 87
-EVs: 252 HP / 252 Def / 4 SpD
-Impish Nature
-- Sacred Fire
+Leavanny @ Focus Sash
+Level: 85
+EVs: 12 HP / 252 Atk / 4 Def / 240 Spe
+Ability: Chlorophyll
+Nature: Jolly
+- Entrainment
+- Helping Hand
+- Sticky Web
+- Solar Blade
+
+Crobat @ Focus Sash
+Level: 85
+Ability: Inner Focus
+EVs: 252 HP / 164 Def / 92 Spe
+Nature: Jolly
 - Tailwind
-- Protect
-- Recover
+- Poison Fang
+- Acrobatics
+- Taunt
 
-Flutter Mane @ Sitrus Berry
-Level: 87
-EVs: 248 HP / 252 Def / 8 SpA
-Bold Nature
-- Calm Mind
+Weezing-Galar @ Leftovers
+Level: 85
+Ability: Neutralizing Gas
+EVs: 252 HP / 236 SpD / 20 Spe
+Nature: Bold
+- Heat Wave
+- Toxic
+- Venom Drench
 - Dazzling Gleam
-- Mystical Fire
-- Shadow Ball
 
-Blaziken @ Blazikenite
-Ability: Speed Boost
-Level: 87
-EVs: 196 HP / 252 Atk / 60 Spe
-Adamant Nature
-- Swords Dance
-- Close Combat
-- Flare Blitz
-- Shadow Claw
+Heliolisk @ Choice Specs
+Level: 85
+Ability: Solar Power
+EVs: 40 HP / 4 Def / 252 SpA / 212 Spe
+Nature: Modest
+- Discharge
+- Volt Switch
+- Solar Beam
+- Hyper Voice
+
+Genesect @ Burn Drive
+Level: 85
+EVs: 252 SpA / 252 Spe
+Nature: Modest
+- Techno Blast
+- Bug Buzz
+- Flash Cannon
+- Protect
 
 === TRAINER_EDWIN_2 ===
 Name: EDWIN
@@ -17980,14 +17988,61 @@ Music: Magma
 Double Battle: No
 AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Mightyena
-Level: 42
+Kyurem-White @ Float Stone
+Level: 86
+Nature: Timid
+EVs: 16 HP / 252 SpA / 240 Spe
+Ability: Turboblaze
+- Fusion Flare
+- Glaciate
+- Dragon Pulse
+- Protect
 
-Crobat
-Level: 43
+Brute Bonnet @ Life Orb
+Level: 86
+EVs: 252 Atk / 12 SpD / 240 Spe
+Nature: Adamant
+- Sucker Punch
+- Trailblaze
+- Spore
+- Solar Blade
 
-Camerupt
-Level: 44
+Volcanion @ Water Gem
+Level: 86
+EVs: 12 Def / 252 SpA  / 244 Spe
+Nature: Modest
+- Flamethrower
+- Hydro Steam
+- Steam Eruption
+- Solar Beam
+
+Iron Boulder @ Booster Energy
+Level: 86
+EVs: 36 HP / 172 Atk / 160 SpD / 140 Spe
+Nature: Careful
+- Mighty Cleave
+- Rock Slide
+- Psycho Cut
+- Swords Dance
+
+Marowak-Alola @ Thick Club
+Level: 86
+Nature: Adamant
+EVs: 28 HP / 252 Atk / 4 SpD / 224 Spe
+Ability: Lightning Rod
+- Shadow Bone
+- Flare Blitz
+- Bonemerang
+- Thunder Punch
+
+Groudon @ Red Orb
+Level: 86
+Nature: Adamant
+EVs: 16 HP / 252 SpD / 240 Spe
+- Precipice Blades
+- Stone Edge
+- Eruption
+- Stomping Tantrum
 
 === TRAINER_PETE ===
 Name: PETE

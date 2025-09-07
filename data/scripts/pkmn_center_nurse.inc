@@ -391,7 +391,7 @@ MoveRelearner_EventScript_ComeBackWithHeartScale::
 	end
 
 MoveRelearner_Text_ComeBackWithHeartScale:
-	.string "You need a HEART SCALE to remember a move.$"
+	.string "You need a HEART SCALE to do that.$"
 
 MoveRelearner_Text_TutorIntro:
 	.string "I can remind a POKéMON a move\n"

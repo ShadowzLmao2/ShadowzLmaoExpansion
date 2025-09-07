@@ -6683,6 +6683,7 @@ static const struct LevelUpMove sRaikouLevelUpLearnset[] = {
     LEVEL_UP_MOVE(66, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE(72, MOVE_THUNDER),
     LEVEL_UP_MOVE(78, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(85, MOVE_THUNDERCLAP),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_RAIKOU
@@ -6708,6 +6709,7 @@ static const struct LevelUpMove sEnteiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(66, MOVE_SUNNY_DAY),
     LEVEL_UP_MOVE(72, MOVE_FIRE_BLAST),
     LEVEL_UP_MOVE(78, MOVE_ERUPTION),
+    LEVEL_UP_MOVE(85, MOVE_BURNING_BULWARK),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ENTEI
@@ -6733,6 +6735,7 @@ static const struct LevelUpMove sSuicuneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(66, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE(72, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE(78, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(85, MOVE_HYDRO_STEAM),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SUICUNE

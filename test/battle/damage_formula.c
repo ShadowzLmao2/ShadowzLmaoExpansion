@@ -196,22 +196,22 @@ SINGLE_BATTLE_TEST("Gem boosted Damage calculation")
 {
     s16 dmg;
     s16 expectedDamage;
-    PARAMETRIZE { expectedDamage = 240; }
-    PARAMETRIZE { expectedDamage = 237; }
-    PARAMETRIZE { expectedDamage = 234; }
-    PARAMETRIZE { expectedDamage = 232; }
-    PARAMETRIZE { expectedDamage = 229; }
-    PARAMETRIZE { expectedDamage = 228; }
-    PARAMETRIZE { expectedDamage = 225; }
-    PARAMETRIZE { expectedDamage = 222; }
-    PARAMETRIZE { expectedDamage = 220; }
-    PARAMETRIZE { expectedDamage = 217; }
-    PARAMETRIZE { expectedDamage = 216; }
-    PARAMETRIZE { expectedDamage = 213; }
-    PARAMETRIZE { expectedDamage = 210; }
-    PARAMETRIZE { expectedDamage = 208; }
-    PARAMETRIZE { expectedDamage = 205; }
-    PARAMETRIZE { expectedDamage = 204; }
+    PARAMETRIZE { expectedDamage = 202; }
+    PARAMETRIZE { expectedDamage = 199; }
+    PARAMETRIZE { expectedDamage = 198; }
+    PARAMETRIZE { expectedDamage = 195; }
+    PARAMETRIZE { expectedDamage = 193; }
+    PARAMETRIZE { expectedDamage = 192; }
+    PARAMETRIZE { expectedDamage = 189; }
+    PARAMETRIZE { expectedDamage = 187; }
+    PARAMETRIZE { expectedDamage = 186; }
+    PARAMETRIZE { expectedDamage = 183; }
+    PARAMETRIZE { expectedDamage = 181; }
+    PARAMETRIZE { expectedDamage = 180; }
+    PARAMETRIZE { expectedDamage = 177; }
+    PARAMETRIZE { expectedDamage = 175; }
+    PARAMETRIZE { expectedDamage = 174; }
+    PARAMETRIZE { expectedDamage = 171; }
     GIVEN {
         PLAYER(SPECIES_MAKUHITA) { Item(ITEM_FIGHTING_GEM); }
         OPPONENT(SPECIES_MAKUHITA);
