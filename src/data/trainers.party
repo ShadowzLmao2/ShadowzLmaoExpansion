@@ -432,14 +432,38 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Items: Hyper Potion
-Double Battle: No
+Double Battle: Yes
 AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Manectric
-Level: 29
+Whimsicott @ Normalium Z
+Level: 77
+Ability: Prankster
+- Nature Power
+- Misty Terrain
+- Tailwind
+- Giga Drain
 
-Shiftry
-Level: 29
+Baxcalibur @ Loaded Dice
+Level: 77
+- Dragon Dance
+- Protect
+- Scale Shot
+- Icicle Spear
+
+Ninetales-Alola @ Light Clay
+Level: 77
+Ability: Snow Warning
+- Aurora Veil
+- Baton Pass
+- Blizzard
+- Moonblast
+
+Gouging Fire @ Leftovers
+Level: 77
+- Breaking Swipe
+- Dragon Dance
+- Recover
+- Flare Blitz
 
 === TRAINER_ALBERTO ===
 Name: ALBERTO
@@ -5935,8 +5959,44 @@ Music: Rich
 Double Battle: No
 AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Manectric
-Level: 29
+Dragapult @ Leftovers
+Level: 76
+Ability: Infiltrator
+- Hex
+- Will o WIsp
+- Draco Meteor
+- U-Turn
+
+Electrode @ Choice Specs
+Level: 79
+Ability: Soundproof
+- Electro Ball
+- Explosion
+- Electroweb
+- Volt Switch
+
+Flutter Mane @ Booster Energy
+Level: 76
+- Icy Wind
+- Moonblast
+- Shadow Ball
+- Mystical Fire
+
+Ribombee @ Focus Sash
+Level: 77
+Ability: Shield Dust
+- Sticky Web
+- Moonblast
+- Bug Buzz
+- U-Turn
+
+Blaziken @ Focus Sash
+Level: 77
+Ability: Speed Boost
+- Protect
+- Swords Dance
+- Pyro Ball
+- Close Combat
 
 === TRAINER_MICAH ===
 Name: MICAH
@@ -7141,19 +7201,33 @@ Music: Twins
 Double Battle: Yes
 AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Spinda
-Level: 30
-- Hypnosis
-- Psybeam
-- Dizzy Punch
-- Teeter Dance
+Rampardos @ Choice Band
+Level: 77
+Ability: Rock Head
+- Head Smash
 
-Slaking
-Level: 32
-- Focus Punch
-- Yawn
-- Slack Off
-- Feint Attack
+Hoopa-Unbound @ Life Orb
+Level: 77
+- Hyperspace Fury
+- Close Combat
+- Psyshock
+- Energy Ball
+
+Whimsicott @ Focus Sash
+Level: 77
+Ability: Prankster
+- Tailwind
+- Reflect
+- Light Screen
+- Helping Hand
+
+Stonjourner @ Focus Sash
+Level: 77
+Ability: Power Spot
+- Wide Guard
+- Protect
+- Helping Hand
+- Rock Slide
 
 === TRAINER_ANNA_AND_MEG_1 ===
 Name: ANNA & MEG
@@ -7459,6 +7533,14 @@ Ability: Wind Rider
 - Floaty Fall
 - Petal Blizzard
 - Switcheroo
+
+Rayquaza @ Leftovers
+Level: 76
+Ability: Air Lock
+- Sky Drop
+- Protect
+- Dragon Dance
+- Breaking Swipe
 
 Silvally @ Flying Memory
 Level: 77
@@ -18765,23 +18847,41 @@ Music: Male
 Double Battle: No
 AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Makuhita
-Level: 25
+Mewtwo @ Life Orb
+Level: 75
+Ability: Neuroforce
+- Psystrike
+- Recover
+- Aura Sphere
+- Flamethrower
 
-Wingull
-Level: 25
+Aegislash @ Leftovers
+Level: 77
+- Kings Shield
+- Swords Dance
+- Shadow Sneak
+- Iron Head
 
-Tropius
-Level: 25
+Xerneas @ Power Herb
+Level: 76
+- Geomancy
+- Moonblast
+- Defog
+- Rest
 
-Zigzagoon
-Level: 25
+Yveltal @ Heavy-Duty Boots
+Level: 76
+- Roost
+- Defog
+- Sucker Punch
+- Oblivion Wing
 
-Electrike
-Level: 25
-
-Numel
-Level: 25
+Zygarde @ Loaded Dice
+Level: 76
+- Thousand Arrows
+- Coil
+- Scale Shot
+- Glare
 
 === TRAINER_PAT ===
 Name: PAT
@@ -18792,23 +18892,45 @@ Music: Female
 Double Battle: No
 AI: Omniscient / Try To Faint / Smart Mon Choices / Hp Aware / Check Viability / Smart Switching
 
-Poochyena
-Level: 25
+Absol @ Absolite
+Level: 77
+Ability: Justified
+- Play Rough
+- Night Slash
+- Spikes
+- Taunt
 
-Shroomish
-Level: 25
+Frosmoth @ Leftovers
+Level: 79
+Ability: Ice Scales
+- Struggle Bug
+- Ice Beam
+- Quiver Dance
+- Recover
 
-Electrike
-Level: 25
+Camerupt @ Assault Vest
+Level: 78
+Ability: Solid Rock
+- Aura Sphere
+- Earth Power
+- Flamethrower
+- Power Gem
 
-Marill
-Level: 25
+Whiscash @ Covert Cloak
+Level: 78
+Ability: Oblivious
+- Stockpile
+- Earthquake
+- Toxic
+- Rest
 
-Sandshrew
-Level: 25
-
-Gulpin
-Level: 25
+Electrode-Hisui @ Life Orb
+Level: 77
+Ability: Static
+- Giga Drain
+- Thunderbolt
+- Chloroblast
+- Volt Switch
 
 === TRAINER_CRISTIN_1 ===
 Name: CRISTIN
