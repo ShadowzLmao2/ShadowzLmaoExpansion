@@ -26,7 +26,6 @@ LittlerootTown_BrendansHouse_2F_EventScript_CheckPlayersPC::
 	playse SE_PC_ON
 	msgbox gText_PlayerHouseBootPC, MSGBOX_DEFAULT
 	special BedroomPC
-	waitstate
 	releaseall
 	end
 
@@ -53,4 +52,9 @@ PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
 
 Common_Text_LookCloserAtMap:
 	.string "{PLAYER} took a closer look at the\n"
-	.string "HOENN region map.$"
+	.string "{REGION} region map.$"
+
+PlayersHouse_2F_Text_ItsAGameCube:
+	.string "It's a Nintendo GameCube.\p"
+	.string "A Game Boy Advance is connected to\n"
+	.string "serve as the Controller.$"

@@ -43,6 +43,7 @@ PetalburgCity_Gym_OnFrame:
 	.2byte 0
 
 PetalburgCity_Gym_EventScript_Norman::
+	vsseeker_rematchid TRAINER_NORMAN_1
 	lock
 	faceplayer
 	switch VAR_PETALBURG_GYM_STATE
@@ -446,7 +447,6 @@ PetalburgCity_Gym_EventScript_OpenOHKORoomDoors::
 
 PetalburgCity_Gym_EventScript_SlideOpenRoomDoors::
 	special PetalburgGymSlideOpenRoomDoors
-	waitstate
 	return
 
 PetalburgCity_Gym_EventScript_UnlockRoomDoors::

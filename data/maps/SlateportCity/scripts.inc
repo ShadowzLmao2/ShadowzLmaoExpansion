@@ -743,7 +743,6 @@ SlateportCity_Movement_ScottExitAfterBattleTent:
 SlateportCity_EventScript_BerryCrushRankingsSign::
 	lockall
 	special ShowBerryCrushRankings
-	waitstate
 	releaseall
 	end
 
