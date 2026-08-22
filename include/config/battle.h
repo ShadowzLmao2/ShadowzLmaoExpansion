@@ -135,7 +135,7 @@
 #define B_DREAM_EATER_LIQUID_OOZE   GEN_LATEST // In Gen5+, Dream Eater is affected by Liquid Ooze.
 
 // Ability settings
-#define B_GALE_WINGS                GEN_6 // In Gen7+ requires full HP to trigger.
+#define B_GALE_WINGS                GEN_LATEST // In Gen7+ requires full HP to trigger.
 #define B_STANCE_CHANGE_FAIL        GEN_LATEST // In Gen7+, Stance Change fails if the Pokémon is unable to use a move because of confusion, paralysis, etc. In Gen6, it doesn't.
 #define B_SHADOW_TAG_ESCAPE         GEN_LATEST // In Gen4+, if both sides have a Pokémon with Shadow Tag, all battlers can escape. Before, neither side could escape this situation.
 #define B_MOODY_ACC_EVASION         GEN_LATEST // In Gen8, Moody CANNOT raise Accuracy and Evasion anymore.
@@ -152,12 +152,13 @@
 #define B_REDIRECT_ABILITY_ALLIES   GEN_LATEST // In Gen4+, Lightning Rod/Storm Drain redirect ally's moves as well.
 #define B_LEAF_GUARD_PREVENTS_REST  GEN_LATEST // In Gen5+, Leaf Guard prevents the use of Rest in harsh sunlight.
 #define B_TRANSISTOR_BOOST          GEN_LATEST // In Gen9+, Transistor will only boost Electric-type moves by 1.3x as opposed to 1.5x.
+#define B_DRAGONS_MAW               GEN_LATEST // In Gen9+, Dragon's Maw will only boost Dragon-type moves by 1.3x as opposed to 1.5x.
 #define B_ILLUMINATE_EFFECT         GEN_LATEST // In Gen9+, Illuminate prevents accuracy reductions and ignores the target's evasion.
 #define B_WEAK_ARMOR_SPEED          GEN_LATEST // In Gen7+, Weak Armor raises Speed by 2 stages instead of 1 when hit by a physical move.
 #define B_PROTEAN_LIBERO            GEN_8      // In Gen9+, Protean and Libero change the user's type only once per Battle.
 #define B_INTREPID_SWORD            GEN_8      // In Gen9+, Intrepid Sword raises Attack by one stage only once per Battle.
 #define B_DAUNTLESS_SHIELD          GEN_8      // In Gen9+, Dauntless Shield raises Defense by one stage only once per Battle.
-#define B_DISGUISE_HP_LOSS          GEN_7      // In Gen8+, when a Disguised Mimikyu's Disguise is busted, upon changing to its Busted Form it loses HP equal to 1/8 of its maximum HP.
+#define B_DISGUISE_HP_LOSS          GEN_LATEST // In Gen8+, when a Disguised Mimikyu's Disguise is busted, upon changing to its Busted Form it loses HP equal to 1/8 of its maximum HP.
 #define B_ABILITY_TRIGGER_CHANCE    GEN_LATEST // In Gen3, Shed Skin, Cute Charm, Flame Body, Static and Poison Point have a 1/3 chance to trigger. In Gen 4+ it's 30%.
                                                // In Gen3, Effect Spore has a 10% chance to sleep, poison or paralyze, with an equal chance.
                                                // In Gen4, it's 30%. In Gen5+ it has 11% to sleep, 9% chance to poison and 10% chance to paralyze.

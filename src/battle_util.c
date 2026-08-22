@@ -8611,7 +8611,10 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
         break;
     case ABILITY_DRAGONS_MAW:
         if (moveType == TYPE_DRAGON)
-            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+            if (GetGenConfig(GEN_CONFIG_TRANSISTOR_BOOST) >= GEN_9)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+            else
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_GORILLA_TACTICS:
         if (IsBattleMovePhysical(move))
